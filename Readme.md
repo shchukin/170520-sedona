@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Щукин](https://up.htmlacademy.ru/adaptive/7/user/170520).
-* Наставник: `Неизвестно`.
+* Наставник: [Игорь Дерябин](https://htmlacademy.ru/profile/id212247).
 
 ---
 
