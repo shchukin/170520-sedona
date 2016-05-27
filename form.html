@@ -34,7 +34,100 @@
 
       <div class="body__content">
 
-        TO DO: content
+        <form class="form" method="" action="">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Представьтесь, пожалуйста:</legend>
+            <div class="form__field input">
+              <label class="input__label" for="feedback-name">Имя:</label>
+              <input class="input__widget" type="text" name="feedback-name" id="feedback-name">
+            </div>
+            <div class="form__field input">
+              <label class="input__label" for="feedback-surname">Фамилия:</label>
+              <input class="input__widget" type="text" name="feedback-surname" id="feedback-surname">
+            </div>
+            <div class="form__field input">
+              <label class="input__label" for="feedback-patronymic">Отчество:</label>
+              <input class="input__widget" type="text" name="feedback-patronymic" id="feedback-patronymic">
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактная информация:</legend>
+            <div class="form__field input input--error">
+              <i class="input__icon input__icon--pic--tel"></i>
+              <label class="input__label" for="feedback-tel">Контактный телефон:</label>
+              <input class="input__widget" type="tel" name="feedback-tel" id="feedback-tel">
+              <div class="input__note">Ошибка, перепроверьте номер</div>
+            </div>
+            <div class="form__field input">
+              <i class="input__icon input__icon--pic--email"></i>
+              <label class="input__label" for="feedback-email">Электронная почта:</label>
+              <input class="input__widget" type="email" name="feedback-email" id="feedback-email">
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <div class="form__field">
+              <label class="form__field choice choice--type--radio">
+                <input class="choice__widget" type="radio" name="feedback-impress" value="positive">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Скорее положительное</span>
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__field choice choice--type--radio">
+                <input class="choice__widget" type="radio" name="feedback-impress" value="negative">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Скорее отрицательное</span>
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__field choice choice--type--radio">
+                <input class="choice__widget" type="radio" name="feedback-impress" value="not-sure">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Затрудняюсь ответить</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <div class="form__field">
+              <label class="form__field choice choice--type--check">
+                <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="devils-bridge">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Мост Дьявола</span>
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__field choice choice--type--check">
+                <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="slide-rock">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Слайд-парк</span>
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__field choice choice--type--check">
+                <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="bell-rock">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Гора-Колокол</span>
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__field choice choice--type--check">
+                <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="red-rocks">
+                <i class="choice__icon"></i>
+                <span class="choice__label">Красные скалы</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Опишите свои эмоции:</legend>
+            <div class="form__field input input--type--area">
+              <label class="input__label input__label--visibility--hidden" for="feedback-message">Отзыв:</label>
+              <textarea class="input__widget" name="feedback-message" id="feedback-message"></textarea>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Отправить отзыв</button>
+        </form>
 
       </div>
     </main>
