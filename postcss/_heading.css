@@ -1,7 +1,18 @@
 .heading {
-
+  display: block;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .heading_size_important {
+  font-size: 21px;
+  line-height: 26px;
+}
 
+.header_palette_secondary {
+  color: #FFFFFF;
 }
