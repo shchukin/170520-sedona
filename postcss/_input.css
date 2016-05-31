@@ -1,5 +1,10 @@
-.input {
+$inputHeight: 58px;
+$inputPadding: 20px;
+$input__labelHeight: 26px;
+$input__labelMargin: 6px;
 
+.input {
+  position: relative;
 }
 
 .input_error {
@@ -11,21 +16,79 @@
 }
 
   .input__label {
-
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 $input__labelMargin;
+    font-size: 14px;
+    line-height: $input__labelHeight;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
   }
 
-  .input__widget {
-
-  }
 
   .input__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $inputHeight;
+    height: $inputHeight;
+    background: #e6e6e6;
 
+    .input__label ~ & {
+      top: calc($input__labelHeight + $input__labelMargin);
+    }
   }
 
-  .input__icon_pic_tel {
-
+  .input__icon:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
   }
 
-  .input__icon_pic_email {
+  .input__icon_pic_tel:after {
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
+    background-image: url(../img/icon-phone.svg);
+  }
 
+  .input__icon_pic_email:after {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background-image: url(../img/icon-mail.svg);
+  }
+
+
+  .input__widget {
+    box-sizing: border-box;
+    width: 100%;
+    height: $inputHeight;
+    border: none;
+    padding: 0 $inputPadding;
+    background: #f2f2f2;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+
+    .input_type_area & {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      height: 162px; /* 5 lines */
+      resize: vertical;
+    }
+  }
+
+  .input__note {
+    margin: 5px $inputPadding 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ff5c5c;
   }
