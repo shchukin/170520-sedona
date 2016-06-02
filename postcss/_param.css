@@ -1,8 +1,15 @@
 .param {
-
+  position: relative;
+  padding: 10px 0 0 50px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
 }
   .param__icon {
-
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .param__title {
@@ -10,5 +17,5 @@
   }
 
   .param__description {
-
+    margin: 13px 0 0;
   }

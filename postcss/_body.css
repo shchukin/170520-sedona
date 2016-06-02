@@ -2,11 +2,16 @@
 
 }
   .body__title {
-
+    text-align: center;
   }
 
   .body__description {
-
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-align: center;
   }
 
   .body__content {

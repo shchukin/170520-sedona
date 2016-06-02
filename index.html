@@ -9,20 +9,29 @@
   <body>
 
     <header class="header">
-      <a class="header__logo" href="#">
-        <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
-      </a>
 
       <input class="header__nav-handler" type="checkbox" id="nav-handler">
-      <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
-      <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
 
-      <nav class="header__navigation nav">
-        <a class="nav__link" href="#">Главная</a>
-        <a class="nav__link" href="#">Фото и видео</a>
-        <a class="nav__link" href="#">Форма отзыва</a>
-        <a class="nav__link" href="#">HTML academy</a>
-      </nav>
+      <!--
+        Keep margin-top as inline style cause
+        styles will use transition on it when loaded
+      -->
+      <div class="header__navigation" style="margin-top: -222px;">
+        <nav class="nav">
+          <a class="nav__link" href="#">Главная</a>
+          <a class="nav__link" href="#">Фото и видео</a>
+          <a class="nav__link" href="#">Форма отзыва</a>
+          <a class="nav__link" href="#">HTML academy</a>
+        </nav>
+        <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
+      </div>
+
+      <div class="header__bar">
+        <a class="header__logo" href="#">
+          <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
+        </a>
+        <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
+      </div>
 
     </header>
 
@@ -38,9 +47,9 @@
 
       <div class="body__content body__content_angles">
 
-        <div class="advantage">
+        <div class="advantage advantage_highlight">
           <div class="advantage__summary">
-            <h2 class="advantage__title heading">Настоящий городок</h2>
+            <h2 class="advantage__title heading header_palette_secondary">Настоящий городок</h2>
             <div class="advantage__index">№1</div>
             <p class="advantage__thing">Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -63,9 +72,9 @@
             </div>
           </div>
         </div>
-        <div class="advantage">
+        <div class="advantage advantage_highlight">
           <div class="advantage__summary">
-            <h2 class="advantage__title heading">Там есть мост дьявола</h2>
+            <h2 class="advantage__title heading header_palette_secondary">Там есть мост дьявола</h2>
             <div class="advantage__index">№2</div>
             <p class="advantage__thing">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -121,11 +130,13 @@
         </div>
       </div>
 
-      <a class="footer__credits developer" href="#">
-        <span class="developer__title">Разработано</span>
-        <cite class="developer__name">HTML Академия</cite>
-        <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
-      </a>
+      <div class="footer__credits">
+        <a class="developer" href="#">
+          <span class="developer__title">Разработано</span>
+          <cite class="developer__name">HTML Академия</cite>
+          <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
+        </a>
+      </div>
 
     </footer>
 
