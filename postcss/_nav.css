@@ -1,6 +1,26 @@
 .nav {
-
+  background: #81b3d2;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
 }
   .nav__link {
+    display: block;
+    padding: 4px 0 0;
+    border-top: 1px solid #678fa8;
+    border-bottom: 1px solid #9ac2db;
+    text-decoration: none;
+    color: inherit;
+  }
 
+  .nav__link:first-child {
+    border-top: none;
+  }
+
+  .nav__link:last-child {
+    border-bottom: none;
   }
