@@ -28,6 +28,10 @@ $input__labelMargin: 6px;
     text-transform: uppercase;
   }
 
+  .input__label_visibility_hidden {
+    display: none;
+  }
+
 
   .input__icon {
     position: absolute;
@@ -92,3 +96,4 @@ $input__labelMargin: 6px;
     line-height: 26px;
     color: #ff5c5c;
   }
+

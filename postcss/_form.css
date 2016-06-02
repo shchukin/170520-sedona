@@ -2,12 +2,26 @@
 
 }
   .form__fieldset {
-
+    margin: 0;
+    border: 0;
+    padding: 39px 0 25px;
+    border-bottom: 1px solid #e5e5e5;
   }
     .form__legend {
-
+      transform: translateY(19px); /* cause <legend> styles */
+      padding: 0;
+      width: 100%;
+      text-align: center;
     }
 
     .form__field {
-
+      margin: 20px 0 0;
     }
+
+    .form__field:first-of-type {
+      margin-top: 0;
+    }
+
+  .form__submit {
+    padding: 50px 0 37px;
+  }

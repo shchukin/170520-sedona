@@ -1,21 +1,24 @@
 .body {
-
+  padding: 39px 0 0;
 }
   .body__title {
     text-align: center;
   }
 
   .body__description {
+    margin: 26px 0 0;
     display: block;
     font-weight: normal;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
     color: #333333;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .body__content {
-
+    margin: 26px 0 0;
+    border-top: 1px solid #e5e5e5;
   }
 
   .body__content_angles {

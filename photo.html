@@ -12,11 +12,7 @@
 
       <input class="header__nav-handler" type="checkbox" id="nav-handler">
 
-      <!--
-        Keep margin-top as inline style cause
-        styles will use transition on it when loaded
-      -->
-      <div class="header__navigation" style="margin-top: -222px;">
+      <div class="header__navigation">
         <nav class="nav">
           <a class="nav__link" href="#">Главная</a>
           <a class="nav__link" href="#">Фото и видео</a>
@@ -36,7 +32,7 @@
     </header>
 
     <div class="stage">
-      <img class="stage__slogan" src="http://placehold.it/104x340" alt="Sedona" title="Sedona">
+      <img class="stage__slogan" src="http://placehold.it/104x34" alt="Sedona" title="Sedona">
     </div>
 
     <main class="body">
@@ -56,8 +52,10 @@
                 <span class="media__credits">Автор фото: Борис</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">1350</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">143</span>
+              </a>
             </div>
           </div>
           <div class="gallery__item media">
@@ -68,8 +66,10 @@
                 <span class="media__credits">Автор фото: Сергей</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">143</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">143</span>
+              </a>
             </div>
           </div>
           <div class="gallery__item media">
@@ -80,8 +80,10 @@
                 <span class="media__credits">Автор фото: Петр</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">96</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">96</span>
+              </a>
             </div>
           </div>
           <div class="gallery__item media">
@@ -92,8 +94,10 @@
                 <span class="media__credits">Автор фото: Антон</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">254</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">254</span>
+              </a>
             </div>
           </div>
         </div>
@@ -104,11 +108,11 @@
     <div class="throw-doubt-upon">
       <div class="throw-doubt-upon__title heading">Все еще сомневаетесь?</div>
       <p class="throw-doubt-upon__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-
-      <!-- temp -->
-      <div style="height: 267px; line-height: 267px; background: purple; color: white; text-align: center;">TO DO: presentation</div>
-      <!--/temp -->
-
+      <div class="throw-doubt-upon__show">
+        <!-- temp -->
+        <div style="height: 267px; line-height: 267px; background: purple; color: white; text-align: center;">TO DO: presentation</div>
+        <!--/temp -->
+      </div>
     </div>
 
     <footer class="footer">
@@ -122,11 +126,13 @@
         </div>
       </div>
 
-      <a class="footer__credits developer" href="#">
-        <span class="developer__title">Разработано</span>
-        <cite class="developer__name">HTML Академия</cite>
-        <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
-      </a>
+      <div class="footer__credits">
+        <a class="developer" href="#">
+          <span class="developer__title">Разработано</span>
+          <cite class="developer__name">HTML Академия</cite>
+          <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
+        </a>
+      </div>
 
     </footer>
 

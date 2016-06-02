@@ -1,10 +1,20 @@
 .throw-doubt-upon {
-
+  padding: 34px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
 }
   .throw-doubt-upon__title {
 
   }
 
   .throw-doubt-upon__description {
+    margin: 26px 0 0;
+  }
 
+
+  .throw-doubt-upon__show {
+    margin: 34px 0 0;
   }
