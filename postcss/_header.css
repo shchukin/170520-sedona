@@ -8,6 +8,7 @@
   .header__navigation {
     position: relative;
     transition: margin-top .5s ease;
+    margin-top: -222px;
 
     .header__nav-handler:not(:checked) ~ & {
       margin-top: -222px;
