@@ -11,7 +11,7 @@
 }
 
   .advantage__summary {
-    padding: 27px 0 28px;
+    padding: 27px 6.25% 28px;
     background: #eeeeee;
     font-size: 14px;
     line-height: 21px;
@@ -50,7 +50,7 @@
   }
 
   .advantage__properties {
-    padding: 26px 0 36px;
+    padding: 26px 6.25% 36px;
   }
     .advantage__stat {
       margin: 20px 0 0;

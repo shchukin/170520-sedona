@@ -11,7 +11,7 @@
 }
   .nav__link {
     display: block;
-    padding: 4px 0 0;
+    padding: 4px 6.25% 0;
     border-top: 1px solid #678fa8;
     border-bottom: 1px solid #9ac2db;
     text-decoration: none;
