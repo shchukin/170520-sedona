@@ -45,31 +45,41 @@
         <form class="form" method="post" action="/">
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Представьтесь, пожалуйста:</legend>
-            <div class="form__field input">
-              <label class="input__label" for="feedback-name">Имя:</label>
-              <input class="input__widget" type="text" name="feedback-name" id="feedback-name">
+            <div class="form__field input input_collapse">
+              <div class="input__container">
+                <label class="input__label" for="feedback-name">Имя:</label>
+                <input class="input__widget" type="text" name="feedback-name" id="feedback-name">
+              </div>
             </div>
-            <div class="form__field input">
-              <label class="input__label" for="feedback-surname">Фамилия:</label>
-              <input class="input__widget" type="text" name="feedback-surname" id="feedback-surname">
+            <div class="form__field input input_collapse">
+              <div class="input__container">
+                <label class="input__label" for="feedback-surname">Фамилия:</label>
+                <input class="input__widget" type="text" name="feedback-surname" id="feedback-surname">
+              </div>
             </div>
-            <div class="form__field input">
-              <label class="input__label" for="feedback-patronymic">Отчество:</label>
-              <input class="input__widget" type="text" name="feedback-patronymic" id="feedback-patronymic">
+            <div class="form__field input input_collapse">
+              <div class="input__container">
+                <label class="input__label" for="feedback-patronymic">Отчество:</label>
+                <input class="input__widget" type="text" name="feedback-patronymic" id="feedback-patronymic">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Контактная информация:</legend>
             <div class="form__field input input_error">
-              <label class="input__label" for="feedback-tel">Контактный телефон:</label>
-              <label class="input__icon input__icon_pic_tel" for="feedback-tel"></label>
-              <input class="input__widget" type="tel" name="feedback-tel" id="feedback-tel">
+              <div class="input__container">
+                <label class="input__label" for="feedback-tel">Контактный телефон:</label>
+                <label class="input__icon input__icon_pic_tel" for="feedback-tel"></label>
+                <input class="input__widget" type="tel" name="feedback-tel" id="feedback-tel">
+              </div>
               <div class="input__note">Ошибка, перепроверьте номер</div>
             </div>
             <div class="form__field input">
-              <label class="input__label" for="feedback-email">Электронная почта:</label>
-              <label class="input__icon input__icon_pic_email" for="feedback-email"></label>
-              <input class="input__widget" type="email" name="feedback-email" id="feedback-email">
+              <div class="input__container">
+                <label class="input__label" for="feedback-email">Электронная почта:</label>
+                <label class="input__icon input__icon_pic_email" for="feedback-email"></label>
+                <input class="input__widget" type="email" name="feedback-email" id="feedback-email">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
