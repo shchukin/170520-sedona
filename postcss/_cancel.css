@@ -1,0 +1,26 @@
+.cancel {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+  .cancel:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    background: url(../img/icon-cross.svg) no-repeat center center;
+    background-size: auto 100%;
+  }

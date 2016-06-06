@@ -1,0 +1,9 @@
+.stage {
+  height: 289px;
+  padding: 100px 0 0;
+  text-align: center;
+  background: red;
+}
+  .stage__slogan {
+    vertical-align: top;
+  }

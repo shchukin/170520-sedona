@@ -1,0 +1,15 @@
+.in-touch {
+  text-align: center;
+}
+  .in-touch__hash-tag {
+
+  }
+
+  .in-touch__list {
+    margin: 35px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+    .in-touch__item {
+      margin: 0 3px;
+    }

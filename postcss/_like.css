@@ -1,0 +1,23 @@
+.like {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 36px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+  .like:before {
+    content: '!';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 24px;
+    height: 21px;
+    background: purple;
+    text-align: center;
+    color: #fff;
+  }

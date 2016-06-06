@@ -3,24 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
 
     <header class="header">
-      <a class="header__logo" href="#">
-        <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
-      </a>
 
       <input class="header__nav-handler" type="checkbox" id="nav-handler">
-      <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
-      <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
 
-      <nav class="header__navigation nav">
-        <a class="nav__link" href="#">Главная</a>
-        <a class="nav__link" href="#">Фото и видео</a>
-        <a class="nav__link" href="#">Форма отзыва</a>
-        <a class="nav__link" href="#">HTML academy</a>
-      </nav>
+      <div class="header__navigation">
+        <nav class="nav">
+          <a class="nav__link" href="#">Главная</a>
+          <a class="nav__link" href="#">Фото и видео</a>
+          <a class="nav__link" href="#">Форма отзыва</a>
+          <a class="nav__link" href="#">HTML academy</a>
+        </nav>
+        <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
+      </div>
+
+      <div class="header__bar">
+        <a class="header__logo" href="#">
+          <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
+        </a>
+        <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
+      </div>
 
     </header>
 
@@ -34,11 +40,11 @@
 
       <b class="body__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</b>
 
-      <div class="body__content body__content_page_index">
+      <div class="body__content body__content_angles">
 
-        <div class="advantage">
+        <div class="advantage advantage_highlight">
           <div class="advantage__summary">
-            <h2 class="advantage__title heading">Настоящий городок</h2>
+            <h2 class="advantage__title heading header_palette_secondary">Настоящий городок</h2>
             <div class="advantage__index">№1</div>
             <p class="advantage__thing">Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -61,9 +67,9 @@
             </div>
           </div>
         </div>
-        <div class="advantage">
+        <div class="advantage advantage_highlight">
           <div class="advantage__summary">
-            <h2 class="advantage__title heading">Там есть мост дьявола</h2>
+            <h2 class="advantage__title heading header_palette_secondary">Там есть мост дьявола</h2>
             <div class="advantage__index">№2</div>
             <p class="advantage__thing">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -95,7 +101,7 @@
     </main>
 
     <div class="start-booking">
-      <div class="start-booking__title heading heading--size--important">Заинтересовались?</div>
+      <div class="start-booking__title heading heading_size_important">Заинтересовались?</div>
       <p class="start-booking__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="start-booking__handler button" href="#">Найти гостиницу</a>
     </div>
@@ -111,7 +117,7 @@
     <footer class="footer">
 
       <div class="footer__connect in-touch">
-        <a class="in-touch__hash-tag heading heading--size--important" href="#">#visitsedona</a>
+        <a class="in-touch__hash-tag heading heading_size_important" href="#">#visitsedona</a>
         <div class="in-touch__list">
           <a class="in-touch__item social social_network_twitter" href="#">Twitter</a>
           <a class="in-touch__item social social_network_facebook" href="#">Facebook</a>
@@ -119,11 +125,13 @@
         </div>
       </div>
 
-      <a class="footer__credits developer" href="#">
-        <span class="developer__title">Разработано</span>
-        <cite class="developer__name">HTML Академия</cite>
-        <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
-      </a>
+      <div class="footer__credits">
+        <a class="developer" href="#">
+          <span class="developer__title">Разработано</span>
+          <cite class="developer__name">HTML Академия</cite>
+          <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
+        </a>
+      </div>
 
     </footer>
 

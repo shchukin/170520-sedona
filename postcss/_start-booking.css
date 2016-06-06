@@ -1,0 +1,19 @@
+.start-booking {
+  padding: 28px 6.25% 49px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
+  .start-booking__title {
+
+  }
+
+  .start-booking__description {
+    margin: 20px 0 0;
+  }
+
+  .start-booking__handler {
+    margin: 34px 0 0;
+  }

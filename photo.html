@@ -3,29 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
 
     <header class="header">
-      <a class="header__logo" href="#">
-        <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
-      </a>
 
       <input class="header__nav-handler" type="checkbox" id="nav-handler">
-      <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
-      <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
 
-      <nav class="header__navigation nav">
-        <a class="nav__link" href="#">Главная</a>
-        <a class="nav__link" href="#">Фото и видео</a>
-        <a class="nav__link" href="#">Форма отзыва</a>
-        <a class="nav__link" href="#">HTML academy</a>
-      </nav>
+      <div class="header__navigation">
+        <nav class="nav">
+          <a class="nav__link" href="#">Главная</a>
+          <a class="nav__link" href="#">Фото и видео</a>
+          <a class="nav__link" href="#">Форма отзыва</a>
+          <a class="nav__link" href="#">HTML academy</a>
+        </nav>
+        <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
+      </div>
+
+      <div class="header__bar">
+        <a class="header__logo" href="#">
+          <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
+        </a>
+        <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
+      </div>
 
     </header>
 
     <div class="stage">
-      <img class="stage__slogan" src="http://placehold.it/104x340" alt="Sedona" title="Sedona">
+      <img class="stage__slogan" src="http://placehold.it/104x34" alt="Sedona" title="Sedona">
     </div>
 
     <main class="body">
@@ -45,8 +51,10 @@
                 <span class="media__credits">Автор фото: Борис</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">1350</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">143</span>
+              </a>
             </div>
           </div>
           <div class="gallery__item media">
@@ -57,8 +65,10 @@
                 <span class="media__credits">Автор фото: Сергей</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">143</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">143</span>
+              </a>
             </div>
           </div>
           <div class="gallery__item media">
@@ -69,8 +79,10 @@
                 <span class="media__credits">Автор фото: Петр</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">96</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">96</span>
+              </a>
             </div>
           </div>
           <div class="gallery__item media">
@@ -81,8 +93,10 @@
                 <span class="media__credits">Автор фото: Антон</span>
               </figcaption>
             </figure>
-            <div class="media__acceptance like">
-              <span class="like__value">254</span>
+            <div class="media__footer">
+              <a class="like" href="#">
+                <span class="like__value">254</span>
+              </a>
             </div>
           </div>
         </div>
@@ -93,17 +107,17 @@
     <div class="throw-doubt-upon">
       <div class="throw-doubt-upon__title heading">Все еще сомневаетесь?</div>
       <p class="throw-doubt-upon__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-
-      <!-- temp -->
-      <div style="height: 267px; line-height: 267px; background: purple; color: white; text-align: center;">TO DO: presentation</div>
-      <!--/temp -->
-
+      <div class="throw-doubt-upon__show">
+        <!-- temp -->
+        <div style="height: 267px; line-height: 267px; background: purple; color: white; text-align: center;">TO DO: presentation</div>
+        <!--/temp -->
+      </div>
     </div>
 
     <footer class="footer">
 
       <div class="footer__connect in-touch">
-        <a class="in-touch__hash-tag heading heading--size--important" href="#">#visitsedona</a>
+        <a class="in-touch__hash-tag heading heading_size_important" href="#">#visitsedona</a>
         <div class="in-touch__list">
           <a class="in-touch__item social social_network_twitter" href="#">Twitter</a>
           <a class="in-touch__item social social_network_facebook" href="#">Facebook</a>
@@ -111,11 +125,13 @@
         </div>
       </div>
 
-      <a class="footer__credits developer" href="#">
-        <span class="developer__title">Разработано</span>
-        <cite class="developer__name">HTML Академия</cite>
-        <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
-      </a>
+      <div class="footer__credits">
+        <a class="developer" href="#">
+          <span class="developer__title">Разработано</span>
+          <cite class="developer__name">HTML Академия</cite>
+          <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
+        </a>
+      </div>
 
     </footer>
 

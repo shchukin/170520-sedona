@@ -3,29 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
 
     <header class="header">
-      <a class="header__logo" href="#">
-        <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
-      </a>
 
       <input class="header__nav-handler" type="checkbox" id="nav-handler">
-      <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
-      <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
 
-      <nav class="header__navigation nav">
-        <a class="nav__link" href="#">Главная</a>
-        <a class="nav__link" href="#">Фото и видео</a>
-        <a class="nav__link" href="#">Форма отзыва</a>
-        <a class="nav__link" href="#">HTML academy</a>
-      </nav>
+      <div class="header__navigation">
+        <nav class="nav">
+          <a class="nav__link" href="#">Главная</a>
+          <a class="nav__link" href="#">Фото и видео</a>
+          <a class="nav__link" href="#">Форма отзыва</a>
+          <a class="nav__link" href="#">HTML academy</a>
+        </nav>
+        <label class="header__hide-nav cancel" for="nav-handler">Закрыть меню</label>
+      </div>
+
+      <div class="header__bar">
+        <a class="header__logo" href="#">
+          <img class="header__emblem" src="http://placehold.it/110x83" alt="City of Sedona" title="City of Sedona">
+        </a>
+        <label class="header__show-nav burger" for="nav-handler">Открыть меню</label>
+      </div>
 
     </header>
 
     <div class="stage">
-      <img class="stage__slogan" src="http://placehold.it/104x340" alt="Sedona" title="Sedona">
+      <img class="stage__slogan" src="http://placehold.it/104x34" alt="Sedona" title="Sedona">
     </div>
 
     <main class="body">
@@ -39,51 +45,61 @@
         <form class="form" method="post" action="/">
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Представьтесь, пожалуйста:</legend>
-            <div class="form__field input">
-              <label class="input__label" for="feedback-name">Имя:</label>
-              <input class="input__widget" type="text" name="feedback-name" id="feedback-name">
+            <div class="form__field input input_collapse">
+              <div class="input__container">
+                <label class="input__label" for="feedback-name">Имя:</label>
+                <input class="input__widget" type="text" name="feedback-name" id="feedback-name">
+              </div>
             </div>
-            <div class="form__field input">
-              <label class="input__label" for="feedback-surname">Фамилия:</label>
-              <input class="input__widget" type="text" name="feedback-surname" id="feedback-surname">
+            <div class="form__field input input_collapse">
+              <div class="input__container">
+                <label class="input__label" for="feedback-surname">Фамилия:</label>
+                <input class="input__widget" type="text" name="feedback-surname" id="feedback-surname">
+              </div>
             </div>
-            <div class="form__field input">
-              <label class="input__label" for="feedback-patronymic">Отчество:</label>
-              <input class="input__widget" type="text" name="feedback-patronymic" id="feedback-patronymic">
+            <div class="form__field input input_collapse">
+              <div class="input__container">
+                <label class="input__label" for="feedback-patronymic">Отчество:</label>
+                <input class="input__widget" type="text" name="feedback-patronymic" id="feedback-patronymic">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Контактная информация:</legend>
-            <div class="form__field input input--error">
-              <i class="input__icon input__icon--pic--tel"></i>
-              <label class="input__label" for="feedback-tel">Контактный телефон:</label>
-              <input class="input__widget" type="tel" name="feedback-tel" id="feedback-tel">
+            <div class="form__field input input_error">
+              <div class="input__container">
+                <label class="input__label" for="feedback-tel">Контактный телефон:</label>
+                <label class="input__icon input__icon_pic_tel" for="feedback-tel"></label>
+                <input class="input__widget" type="tel" name="feedback-tel" id="feedback-tel">
+              </div>
               <div class="input__note">Ошибка, перепроверьте номер</div>
             </div>
             <div class="form__field input">
-              <i class="input__icon input__icon--pic--email"></i>
-              <label class="input__label" for="feedback-email">Электронная почта:</label>
-              <input class="input__widget" type="email" name="feedback-email" id="feedback-email">
+              <div class="input__container">
+                <label class="input__label" for="feedback-email">Электронная почта:</label>
+                <label class="input__icon input__icon_pic_email" for="feedback-email"></label>
+                <input class="input__widget" type="email" name="feedback-email" id="feedback-email">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Ваше общее впечатление:</legend>
             <div class="form__field">
-              <label class="form__field choice choice--type--radio">
+              <label class="form__field choice choice_type_radio">
                 <input class="choice__widget" type="radio" name="feedback-impress" value="positive">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Скорее положительное</span>
               </label>
             </div>
             <div class="form__field">
-              <label class="form__field choice choice--type--radio">
+              <label class="form__field choice choice_type_radio">
                 <input class="choice__widget" type="radio" name="feedback-impress" value="negative">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Скорее отрицательное</span>
               </label>
             </div>
             <div class="form__field">
-              <label class="form__field choice choice--type--radio">
+              <label class="form__field choice choice_type_radio">
                 <input class="choice__widget" type="radio" name="feedback-impress" value="not-sure">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Затрудняюсь ответить</span>
@@ -93,28 +109,28 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Посещенные достопримечательности:</legend>
             <div class="form__field">
-              <label class="form__field choice choice--type--check">
+              <label class="form__field choice choice_type_check">
                 <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="devils-bridge">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Мост Дьявола</span>
               </label>
             </div>
             <div class="form__field">
-              <label class="form__field choice choice--type--check">
+              <label class="form__field choice choice_type_check">
                 <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="slide-rock">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Слайд-парк</span>
               </label>
             </div>
             <div class="form__field">
-              <label class="form__field choice choice--type--check">
+              <label class="form__field choice choice_type_check">
                 <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="bell-rock">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Гора-Колокол</span>
               </label>
             </div>
             <div class="form__field">
-              <label class="form__field choice choice--type--check">
+              <label class="form__field choice choice_type_check">
                 <input class="choice__widget" type="checkbox" name="feedback-attraction[]" value="red-rocks">
                 <i class="choice__icon"></i>
                 <span class="choice__label">Красные скалы</span>
@@ -123,12 +139,14 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend heading">Опишите свои эмоции:</legend>
-            <div class="form__field input input--type--area">
-              <label class="input__label input__label--visibility--hidden" for="feedback-message">Отзыв:</label>
+            <div class="form__field input input_type_area">
+              <label class="input__label input__label_visibility_hidden" for="feedback-message">Отзыв:</label>
               <textarea class="input__widget" name="feedback-message" id="feedback-message"></textarea>
             </div>
           </fieldset>
-          <button class="button" type="submit">Отправить отзыв</button>
+          <div class="form__submit">
+            <button class="button" type="submit">Отправить отзыв</button>
+          </div>
         </form>
 
       </div>
@@ -138,7 +156,7 @@
     <footer class="footer">
 
       <div class="footer__connect in-touch">
-        <a class="in-touch__hash-tag heading heading--size--important" href="#">#visitsedona</a>
+        <a class="in-touch__hash-tag heading heading_size_important" href="#">#visitsedona</a>
         <div class="in-touch__list">
           <a class="in-touch__item social social_network_twitter" href="#">Twitter</a>
           <a class="in-touch__item social social_network_facebook" href="#">Facebook</a>
@@ -146,11 +164,13 @@
         </div>
       </div>
 
-      <a class="footer__credits developer" href="#">
-        <span class="developer__title">Разработано</span>
-        <cite class="developer__name">HTML Академия</cite>
-        <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
-      </a>
+      <div class="footer__credits">
+        <a class="developer" href="#">
+          <span class="developer__title">Разработано</span>
+          <cite class="developer__name">HTML Академия</cite>
+          <img class="developer__logo" src="http://placehold.it/30x34" alt="HTML Academy" title="HTML Academy">
+        </a>
+      </div>
 
     </footer>
 

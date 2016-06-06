@@ -1,0 +1,32 @@
+.media {
+
+}
+  .media__stage {
+    margin: 0;
+  }
+    .media__photo {
+      vertical-align: top;
+      width: 100%;
+      height: auto;
+    }
+
+    .media__caption {
+      margin: 16px 0 0;
+      font-size: 14px;
+      line-height: 24px;
+      color: #333333;
+    }
+      .media__title {
+        display: block;
+        font-weight: bold;
+        color: #000000;
+        text-transform: uppercase;
+      }
+
+      .media__credits {
+        display: block;
+      }
+
+    .media__footer {
+      margin: 8px 0 0;
+    }

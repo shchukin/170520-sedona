@@ -1,0 +1,7 @@
+.gallery {
+
+}
+  .gallery__item {
+    padding: 22px 6.25% 10px;
+    border-bottom: 1px solid #e5e5e5;
+  }
