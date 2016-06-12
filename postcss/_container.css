@@ -1,0 +1,21 @@
+.container {
+  padding: 0 6.25%;
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+  .container {
+    padding-left: 7.8125%;
+    padding-right: 7.8125%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  }
+}
+
+
