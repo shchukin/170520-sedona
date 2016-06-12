@@ -9,6 +9,12 @@
   color: #000000;
   text-decoration: none;
 }
+
+.like_for-media {
+
+}
+
+
   .like:before {
     content: '!';
     position: absolute;
@@ -21,3 +27,14 @@
     text-align: center;
     color: #fff;
   }
+
+
+@media (min-width: $widthDesktopStarts) {
+  .like_for-media {
+    color: #fff;
+  }
+  .like_for-media:before {
+    background-color: #fff;
+    color: purple;
+  }
+}

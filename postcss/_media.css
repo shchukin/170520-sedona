@@ -30,3 +30,59 @@
     .media__footer {
       margin: 8px 0 0;
     }
+
+
+@media (min-width: $widthTabletStarts) {
+  .media {
+    position: relative;
+  }
+    .media__caption {
+      margin-top: 0;
+      padding: 16px 120px 16px 20px;
+      background-color: #f2f2f2;
+    }
+      .media__title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .media__credits {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+    .media__footer {
+      position: absolute;
+      right: 20px;
+      bottom: 26px;
+      margin-top: 0;
+      min-width: 60px;
+    }
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+  .media {
+    position: relative;
+  }
+    .media__caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.3);
+    }
+      .media__title {
+        color: #fff;
+      }
+
+      .media__credits {
+        color: #fff;
+      }
+
+    .media__footer {
+      color: #fff;
+    }
+}
