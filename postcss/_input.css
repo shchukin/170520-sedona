@@ -1,14 +1,8 @@
 $inputHeight: 58px;
 $inputPadding: 20px;
-$input__labelHeight: 26px;
-$input__labelMargin: 6px;
 
 .input {
   position: relative;
-}
-
-.input_collapse {
-
 }
 
 .input_error {
@@ -18,36 +12,36 @@ $input__labelMargin: 6px;
 .input_type_area {
 
 }
-  .input__container {
 
-    .input_collapse & {
-      display: flex;
-      align-items: center;
-    }
+  /* label */
+
+  .input__label {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 $inputPadding;
+    font-size: 14px;
+    line-height: 36px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
   }
 
-    .input__label {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 0 $input__labelMargin;
-      font-size: 14px;
-      line-height: $input__labelHeight;
-      color: #000000;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      text-transform: uppercase;
+  .input__label_visibility_hidden {
+    display: none;
+  }
 
-      .input_collapse & {
-        flex-shrink: 0;
-        margin: 0 18px 0 0;
-      }
-    }
 
-    .input__label_visibility_hidden {
-      display: none;
-    }
 
+  /* container */
+
+  .input__container {
+    position: relative;
+  }
+
+
+    /* icon */
 
     .input__icon {
       position: absolute;
@@ -56,38 +50,32 @@ $input__labelMargin: 6px;
       width: $inputHeight;
       height: $inputHeight;
       background: #e6e6e6;
+    }
 
-      .input__label ~ & {
-        top: calc($input__labelHeight + $input__labelMargin);
-
-        .input_collapse & {
-          top: 0;
-        }
+      .input__icon:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
       }
-    }
 
-    .input__icon:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      display: block;
-    }
+      .input__icon_pic_tel:after {
+        width: 18px;
+        height: 18px;
+        margin: -9px 0 0 -9px;
+        background-image: url(../img/icon-phone.svg);
+      }
 
-    .input__icon_pic_tel:after {
-      width: 18px;
-      height: 18px;
-      margin: -9px 0 0 -9px;
-      background-image: url(../img/icon-phone.svg);
-    }
+      .input__icon_pic_email:after {
+        width: 16px;
+        height: 16px;
+        margin: -8px 0 0 -8px;
+        background-image: url(../img/icon-mail.svg);
+      }
 
-    .input__icon_pic_email:after {
-      width: 16px;
-      height: 16px;
-      margin: -8px 0 0 -8px;
-      background-image: url(../img/icon-mail.svg);
-    }
 
+    /* widget */
 
     .input__widget {
       box-sizing: border-box;
@@ -111,27 +99,72 @@ $input__labelMargin: 6px;
       }
     }
 
-  .input__note {
-    margin: 5px $inputPadding 0;
-    font-size: 14px;
-    line-height: 26px;
-    color: #ff5c5c;
-  }
+
+    /* note */
+
+    .input__note {
+      margin: 0 $inputPadding;
+      font-size: 14px;
+      line-height: 36px;
+      color: #ff5c5c;
+    }
+
+    @media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+
+      .input__note {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+      }
+
+    }
+
+    @media (min-width: $widthDesktopStarts) {
+
+      .input__note {
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+      }
+
+    }
 
 
-@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
 
-  .input__note {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
-  }
+/* collapse all */
+
+.input_collapse_all {
+  display: flex;
+  align-items: center;
 
   .input__label {
-    padding-left: 20px;
+    flex-shrink: 0;
+    margin: 0 18px 0 0;
+  }
 
+  .input__container {
+    flex-grow: 1;
   }
 
 }
 
+
+/* collapse desktop only */
+
+
+@media (min-width: $widthDesktopStarts) {
+  .input_collapse_desktop {
+    display: flex;
+    align-items: center;
+
+    .input__label {
+      flex-shrink: 0;
+      margin: 0 18px 0 0;
+    }
+
+    .input__container {
+      flex-grow: 1;
+    }
+  }
+
+}

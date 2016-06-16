@@ -50,25 +50,25 @@
                 <span class="form__heading heading">Представьтесь<span class="hide hide_tablet">, пожалуйста</span>:</span>
               </legend>
               <div class="form__field">
-                <div class="input input_collapse">
+                <div class="input input_collapse_all">
+                  <label class="input__label" for="feedback-name">Имя:</label>
                   <div class="input__container">
-                    <label class="input__label" for="feedback-name">Имя:</label>
                     <input class="input__widget" type="text" name="feedback-name" id="feedback-name">
                   </div>
                 </div>
               </div>
               <div class="form__field">
-                <div class="input input_collapse">
+                <div class="input input_collapse_all">
+                  <label class="input__label" for="feedback-surname">Фамилия:</label>
                   <div class="input__container">
-                    <label class="input__label" for="feedback-surname">Фамилия:</label>
                     <input class="input__widget" type="text" name="feedback-surname" id="feedback-surname">
                   </div>
                 </div>
               </div>
               <div class="form__field">
-                <div class="input input_collapse">
+                <div class="input input_collapse_all">
+                  <label class="input__label" for="feedback-patronymic">Отчество:</label>
                   <div class="input__container">
-                    <label class="input__label" for="feedback-patronymic">Отчество:</label>
                     <input class="input__widget" type="text" name="feedback-patronymic" id="feedback-patronymic">
                   </div>
                 </div>
@@ -79,19 +79,19 @@
                 <span class="form__heading heading">Контактная информация:</span>
               </legend>
               <div class="form__field form__field_id_tel">
-                <div class="input input_error">
+                <div class="input input_collapse_desktop input_error">
+                  <label class="input__label" for="feedback-tel"><span class="hide hide_desktop">Контактный</span> телефон:</label>
                   <div class="input__container">
-                    <label class="input__label" for="feedback-tel">Контактный телефон:</label>
                     <label class="input__icon input__icon_pic_tel" for="feedback-tel"></label>
                     <input class="input__widget" type="tel" name="feedback-tel" id="feedback-tel">
+                    <div class="input__note">Ошибка, перепроверьте номер</div>
                   </div>
-                  <div class="input__note">Ошибка, перепроверьте номер</div>
                 </div>
               </div>
               <div class="form__field">
-                <div class="input">
+                <div class="input input_collapse_desktop">
+                  <label class="input__label" for="feedback-email">Электронная почта:</label>
                   <div class="input__container">
-                    <label class="input__label" for="feedback-email">Электронная почта:</label>
                     <label class="input__icon input__icon_pic_email" for="feedback-email"></label>
                     <input class="input__widget" type="email" name="feedback-email" id="feedback-email">
                   </div>
@@ -170,7 +170,9 @@
               <div class="form__field">
                 <div class="input input_type_area">
                   <label class="input__label input__label_visibility_hidden" for="feedback-message">Отзыв:</label>
-                  <textarea class="input__widget" name="feedback-message" id="feedback-message"></textarea>
+                  <div class="input__container">
+                    <textarea class="input__widget" name="feedback-message" id="feedback-message"></textarea>
+                  </div>
                 </div>
               </div>
             </fieldset>

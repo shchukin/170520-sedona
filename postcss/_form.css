@@ -30,8 +30,7 @@
     padding: 50px 6.25% 37px;
   }
 
-
-
+  
 @media (min-width: $widthTabletStarts) {
   .form__fieldset {
     margin: 0 0 50px;
