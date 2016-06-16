@@ -1,0 +1,49 @@
+.checklist {
+
+}
+  .checklist__item {
+    margin-top: 24px;
+  }
+
+  .checklist__item:first-child {
+    margin-top: 0;
+  }
+
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+  .checklist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .checklist__item {
+      margin-top: 32px;
+      flex-basis: 40%;
+    }
+
+    .checklist__item:nth-child(1),
+    .checklist__item:nth-child(2) {
+      margin-top: 0;
+    }
+
+    .checklist__item:nth-of-type(odd) {
+      margin-left: 10%;
+    }
+
+    .checklist__item:nth-of-type(even) {
+      margin-right: 10%;
+    }
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+  .checklist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+  }
+    .checklist__item,
+    .checklist__item:first-child {
+      margin: 10px;
+    }
+}

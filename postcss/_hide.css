@@ -1,0 +1,34 @@
+.hide {
+
+}
+
+.hide_mobile {
+
+}
+
+.hide_tablet {
+
+}
+
+.hide_desktop {
+
+}
+
+
+@media (max-width: $widthMobileEnds) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+  .hide_tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $widthDesktopStarts) {
+  .hide_desktop {
+    display: none;
+  }
+}

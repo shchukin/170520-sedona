@@ -103,6 +103,7 @@ $input__labelMargin: 6px;
       color: #000000;
 
       .input_type_area & {
+        vertical-align: top;
         padding-top: 16px;
         padding-bottom: 16px;
         height: 162px; /* 5 lines */
@@ -116,4 +117,21 @@ $input__labelMargin: 6px;
     line-height: 26px;
     color: #ff5c5c;
   }
+
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+
+  .input__note {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+  }
+
+  .input__label {
+    padding-left: 20px;
+
+  }
+
+}
 

@@ -2,17 +2,21 @@
 
 }
   .form__fieldset {
-    margin: 0;
     border: 0;
-    padding: 39px 6.25% 25px;
+    margin: 0 -20px;
+    padding: 39px 20px 25px;
     border-bottom: 1px solid #e5e5e5;
   }
     .form__legend {
-      transform: translateY(19px); /* cause <legend> styles */
+      display: block;
       padding: 0;
       width: 100%;
+      transform: translateY(19px); /* cause <legend> styles */
       text-align: center;
     }
+      .form__heading {
+
+      }
 
     .form__field {
       margin: 20px 0 0;
@@ -25,3 +29,155 @@
   .form__submit {
     padding: 50px 6.25% 37px;
   }
+
+
+
+@media (min-width: $widthTabletStarts) {
+  .form__fieldset {
+    margin: 0 0 50px;
+    padding: 67px 0 0;
+    border-bottom: none;
+  }
+    .form__legend {
+      background: linear-gradient(#dbdbdb, #dbdbdb);
+      background-size: 100% 1px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+      .form__heading {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 60px;
+        margin-bottom: -2px;
+        background: #fff;
+      }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset_id_person {
+    box-sizing: border-box;
+    width: 50%;
+    min-width: 50%;
+    order: 2;
+    box-shadow: -1px 0 0 #dbdbdb;
+
+    .form__legend {
+      text-align: left;
+      background: none;
+      transform: translateY(9px);
+    }
+      .form__heading {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  }
+
+  .form__fieldset_id_contacts {
+    width: 100%;
+    min-width: 100%;
+    padding-top: 45px;
+    margin-bottom: 35px;
+    order: 3;
+
+  }
+
+  .form__fieldset_id_impression {
+    width: 50%;
+    min-width: 50%;
+    order: 1;
+
+    .form__legend {
+      text-align: left;
+      background: none;
+      transform: translateY(9px);
+    }
+      .form__heading {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  }
+
+  .form__fieldset_id_attractions {
+    width: 100%;
+    min-width: 100%;
+    order: 4;
+    padding-top: 62px;
+  }
+
+  .form__fieldset_id_emotions {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 0;
+    padding-top: 77px;
+    order: 5;
+  }
+
+  .form__submit {
+    width: 100%;
+    min-width: 100%;
+    order: 6;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+  .form__fieldset_id_person {
+    padding-left: 60px;
+  }
+
+}
+
+@media (min-width: $widthDesktopStarts) {
+
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__fieldset {
+
+  }
+
+  .form__fieldset_id_person {
+    padding-left: 80px;
+  }
+
+  .form__fieldset_id_contacts {
+    font-size: 0;
+
+    .form__field {
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .form__field_id_tel {
+      box-sizing: border-box;
+      padding-right: 80px;
+    }
+
+  }
+
+  .form__fieldset_id_attractions {
+
+    .form__field {
+      margin: 0;
+    }
+
+  }
+
+  .form__fieldset_id_impression {
+
+    .form__legend {
+      padding-left: 78px;
+    }
+
+  }
+
+}

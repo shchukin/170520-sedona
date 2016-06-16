@@ -1,5 +1,4 @@
 .heading {
-  display: block;
   margin: 0;
   font-weight: bold;
   font-size: 18px;
@@ -16,4 +15,12 @@
 
 .header_palette_secondary {
   color: #FFFFFF;
+}
+
+
+@media (min-width: $widthTabletStarts) {
+  .heading {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
