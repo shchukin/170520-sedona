@@ -1,0 +1,10 @@
+.impression {
+
+}
+  .impression__item {
+    margin: 13px 0 0;
+  }
+
+  .impression__item:first-child {
+    margin-top: 0;
+  }

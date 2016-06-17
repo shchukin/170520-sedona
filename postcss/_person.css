@@ -1,0 +1,10 @@
+.person {
+
+}
+  .person__item {
+    margin: 20px 0 0;
+  }
+
+  .person__item:first-child {
+    margin-top: 0;
+  }
