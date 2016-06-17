@@ -2,7 +2,7 @@
 
 }
   .attractions__item {
-    margin-top: 24px;
+    margin-top: 22px;
   }
 
   .attractions__item:first-child {
@@ -14,6 +14,8 @@
   .attractions {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 21px;
+    padding-bottom: 47px;
   }
     .attractions__item {
       margin-top: 32px;
@@ -40,10 +42,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: -10px;
+    padding-top: 22px;
+    padding-bottom: 47px;
+    margin: 0 -10px;
+
   }
     .attractions__item,
     .attractions__item:first-child {
-      margin: 10px;
+      margin: 0 10px;
     }
 }

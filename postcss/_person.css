@@ -8,3 +8,11 @@
   .person__item:first-child {
     margin-top: 0;
   }
+
+
+
+@media (min-width: $widthTabletStarts) {
+  .person {
+    padding-top: 29px;
+  }
+}
