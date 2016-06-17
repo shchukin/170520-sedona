@@ -20,7 +20,7 @@ $inputPadding: 20px;
     vertical-align: top;
     margin: 0 $inputPadding;
     font-size: 14px;
-    line-height: 36px;
+    line-height: 38px;
     color: #000000;
     white-space: nowrap;
     overflow: hidden;
@@ -105,7 +105,7 @@ $inputPadding: 20px;
     .input__note {
       margin: 0 $inputPadding;
       font-size: 14px;
-      line-height: 36px;
+      line-height: 38px;
       color: #ff5c5c;
     }
 

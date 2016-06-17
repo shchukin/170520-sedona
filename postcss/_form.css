@@ -30,7 +30,7 @@
     padding: 50px 6.25% 37px;
   }
 
-  
+
 @media (min-width: $widthTabletStarts) {
   .form__fieldset {
     margin: 0 0 50px;
@@ -144,23 +144,6 @@
 
   .form__fieldset_id_person {
     padding-left: 80px;
-  }
-
-  .form__fieldset_id_contacts {
-    font-size: 0;
-
-    .form__field {
-      margin-top: 0;
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-    }
-
-    .form__field_id_tel {
-      box-sizing: border-box;
-      padding-right: 80px;
-    }
-
   }
 
   .form__fieldset_id_attractions {

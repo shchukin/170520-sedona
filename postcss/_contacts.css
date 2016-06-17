@@ -1,0 +1,38 @@
+.contacts {
+
+}
+  .contacts__tel {
+
+  }
+
+  .contacts__email {
+
+  }
+
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+
+  .contacts__email {
+    margin-top: 18px;
+  }
+
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+
+  .contacts {
+    display: flex;
+  }
+    .contacts__tel {
+      padding-right: 80px;
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    .contacts__email {
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+}
