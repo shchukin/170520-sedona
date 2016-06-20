@@ -14,5 +14,6 @@ $buttonHeight: 58px;
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
 }
