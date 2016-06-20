@@ -2,10 +2,18 @@
   padding: 0 20px;
 }
 
+.container_desktop-only {
+  padding: 0;
+}
+
 @media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
   .container {
     padding-left: 7.8125%;
     padding-right: 7.8125%;
+  }
+
+  .container_desktop-only {
+    padding: 0;
   }
 }
 

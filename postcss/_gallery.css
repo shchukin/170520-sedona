@@ -35,8 +35,8 @@
 
 @media (min-width: $widthDesktopStarts) {
   .gallery__item {
-    width: 33.334%;
-    max-width: 33.334%;
+    width: 33.333%;
+    max-width: 33.333%;
   }
   .gallery__item_highlight {
     width: 100%;

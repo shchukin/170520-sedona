@@ -19,3 +19,31 @@
   .param__description {
     margin: 13px 0 0;
   }
+
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .param {
+    box-sizing: border-box;
+    height: 330px;
+    padding: 44px 20px 0;
+    text-align: center;
+  }
+    .param__icon {
+      position: static;
+      left: auto;
+      top: auto;
+      width: 80px;
+      height: 80px;
+    }
+
+    .param__title {
+      margin-top: 20px;
+
+    }
+
+    .param__description {
+      margin-top: 20px;
+    }
+}

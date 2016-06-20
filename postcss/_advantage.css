@@ -44,10 +44,20 @@
     }
 
   .advantage__background {
-    vertical-align: top;
-    width: 100%;
-    height: auto;
+    position: relative;
+    height: 256px;
+    overflow: hidden;
   }
+    .advantage__pic {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: auto;
+      min-height: 100%;
+      min-width: 100%;
+      transform: translate(-50%, -50%);
+    }
 
   .advantage__properties {
     padding: 26px 6.25% 36px;
@@ -59,3 +69,62 @@
     .advantage__stat:first-child {
       margin-top: 0;
     }
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .advantage {
+    border-top: none;
+  }
+    .advantage__summary {
+      box-sizing: border-box;
+      height: 256px;
+      padding: 46px 20px 45px;
+    }
+      .advantage__thing {
+        margin-top: 21px;
+        white-space: nowrap; /* we will control line breaks manually in html code */
+      }
+
+    .advantage__properties {
+      padding: 0;
+    }
+
+  .advantage_highlight {
+    display: flex;
+    flex-wrap: wrap;
+
+    .advantage__summary {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+      box-sizing: border-box;
+    }
+
+    .advantage__background {
+      flex: 0 0 66.666%;
+      max-width: 66.666%;
+      width: auto;
+    }
+
+    .advantage__properties {
+      box-sizing: border-box;
+      flex: 0 0 100%;
+      display: flex;
+    }
+      .advantage__stat {
+        position: static;
+        margin: 0;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        box-sizing: border-box;
+      }
+
+  }
+
+  .advantage_highlight:nth-child(even) {
+    .advantage__background {
+      order: -1;
+    }
+  }
+}
+
