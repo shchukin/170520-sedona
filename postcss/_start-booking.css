@@ -1,5 +1,5 @@
 .start-booking {
-  padding: 28px 6.25% 49px;
+  padding: 28px 0 49px;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -17,3 +17,19 @@
   .start-booking__handler {
     margin: 34px 0 0;
   }
+
+
+
+@media (min-width: $widthTabletStarts) {
+  .start-booking {
+    max-width: 458px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+
+    .start-booking__description {
+      margin-top: 27px;
+    }
+
+}

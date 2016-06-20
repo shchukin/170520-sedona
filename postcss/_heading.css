@@ -13,6 +13,12 @@
   line-height: 26px;
 }
 
+/* will grow in size */
+.heading_size_grow {
+  font-size: 21px;
+  line-height: 26px;
+}
+
 .header_palette_secondary {
   color: #FFFFFF;
 }
@@ -23,4 +29,14 @@
     font-size: 21px;
     line-height: 26px;
   }
+
+  .heading_size_important {
+    /* same to mobile */
+  }
+
+  .heading_size_grow {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
 }
