@@ -20,6 +20,8 @@
     text-transform: uppercase;
 
     .advantage_highlight & {
+      padding-top: 40px;
+      padding-bottom: 39px;
       background-color: #81b3d2;
       color: #fff;
     }
@@ -80,6 +82,11 @@
       box-sizing: border-box;
       height: 256px;
       padding: 46px 20px 45px;
+
+      .advantage_highlight & {
+        padding-top: 46px;
+      }
+
     }
       .advantage__thing {
         margin-top: 21px;
