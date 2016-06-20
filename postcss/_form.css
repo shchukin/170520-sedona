@@ -24,9 +24,16 @@
 
       }
 
-  .form__submit {
+  .form__actions {
     padding: 50px 0 0;
   }
+    .form__submit {
+
+    }
+
+    .form__note {
+      display: none;
+    }
 
 
 @media (min-width: $widthTabletStarts) {
@@ -114,13 +121,28 @@
     order: 5;
   }
 
-  .form__submit {
+  .form__actions {
     width: 100%;
     min-width: 100%;
     order: 6;
+    display: flex;
     padding-left: 0;
     padding-right: 0;
   }
+    .form__submit {
+      flex: 0 0 50%;
+    }
+
+    .form__note {
+      flex: 0 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 14px;
+      line-height: 18px;
+      color: #333;
+      text-transform: uppercase;
+    }
 
 }
 
