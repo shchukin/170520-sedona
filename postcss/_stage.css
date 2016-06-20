@@ -1,9 +1,119 @@
 .stage {
-  height: 289px;
-  padding: 100px 0 0;
-  text-align: center;
+  position: relative;
+  overflow: hidden; /* to crop angles */
   background: red;
 }
-  .stage__slogan {
-    vertical-align: top;
+
+.stage_main {
+
+}
+
+  /* outer left triangle */
+  .stage:before {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    right: 50%;
+    bottom: 0;
+    display: block;
+    border-right: 600px solid transparent;
+    border-bottom: 58px solid #fff;
   }
+
+  /* outer right triangle */
+  .stage:after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    border-left: 600px solid transparent;
+    border-bottom: 58px solid #fff;
+  }
+
+
+  .stage__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 142px;
+    padding: 0 0 16px;
+
+    .stage_main & {
+      height: 390px;
+      padding-bottom: 0;
+    }
+  }
+
+    /* inner left triangle */
+    .stage__inner:before {
+      content: '';
+      position: absolute;
+      z-index: 200;
+      right: 50%;
+      bottom: 0;
+      display: block;
+      border-right: 350px solid transparent;
+      border-bottom: 58px solid #fff;
+    }
+
+    /* inner right triangle */
+    .stage__inner:after {
+      content: '';
+      position: absolute;
+      z-index: 200;
+      left: 50%;
+      bottom: 0;
+      display: block;
+      border-left: 350px solid transparent;
+      border-bottom: 58px solid #fff;
+    }
+
+      .stage__welcome {
+        display: block;
+        margin: 0 auto 33px;
+      }
+
+      .stage__slogan {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .stage__slogan {
+        display: block;
+        margin: 33px auto 0;
+      }
+
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+
+  .stage__inner {
+    height: 268px;
+    padding-bottom: 22px;
+
+    .stage_main & {
+      height: 498px;
+      padding-bottom: 21px;
+    }
+
+  }
+
+}
+
+@media (min-width: $widthDesktopStarts) {
+
+  .stage__inner {
+    height: 284px;
+    padding-bottom: 17px;
+
+    .stage_main & {
+      height: 498px;
+      padding-bottom: 21px;
+    }
+
+  }
+
+
+}
