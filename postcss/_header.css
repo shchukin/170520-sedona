@@ -7,15 +7,16 @@
 
   .header__navigation {
     position: relative;
-    transition: margin-top .5s ease;
     margin-top: -222px;
 
     .header__nav-handler:not(:checked) ~ & {
       margin-top: -222px;
+      transition: margin-top .5s ease;
     }
 
     .header__nav-handler:checked ~ & {
       margin-top: 0;
+      transition: margin-top .5s ease;
     }
   }
     .header__hide-nav {
@@ -56,3 +57,42 @@
   .header__hide-nav {
 
   }
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .header {
+    position: relative;
+  }
+    .header__hide-nav {
+      display: none;
+
+      &.cancel {
+         display: none;
+       }
+    }
+
+    .header__show-nav {
+      display: none;
+
+      &.burger {
+         display: none;
+       }
+    }
+
+
+    .header__navigation {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 15px;
+      margin-top: 0;
+
+      .header__nav-handler:not(:checked) ~ & {
+        margin-top: 0;
+      }
+    }
+
+}
+

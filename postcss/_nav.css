@@ -9,19 +9,55 @@
   text-align: center;
   white-space: nowrap;
 }
-  .nav__link {
-    display: block;
-    padding: 4px 6.25% 0;
-    border-top: 1px solid #678fa8;
-    border-bottom: 1px solid #9ac2db;
-    text-decoration: none;
-    color: inherit;
-  }
+  .nav__half {
 
-  .nav__link:first-child {
-    border-top: none;
   }
+    .nav__link {
+      display: block;
+      padding: 4px 6.25% 0;
+      border-top: 1px solid #678fa8;
+      border-bottom: 1px solid #9ac2db;
+      text-decoration: none;
+      color: inherit;
 
-  .nav__link:last-child {
-    border-bottom: none;
+      .nav__half:first-child &:first-child {
+        border-top: none;
+      }
+      .nav__half:last-child &:last-child {
+        border-bottom: none;
+      }
+    }
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
   }
+    .nav__half {
+      flex-basis: calc( (100% - 102px) / 2 ); /* 102px is logo width */
+      display: flex;
+      justify-content: space-around;
+      box-sizing: border-box;
+      padding: 0 3%;
+    }
+      .nav__link {
+        padding: 0;
+        border: none;
+      }
+
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+  .nav__half {
+    flex-basis: calc( (100% - 188px) / 2 ); /* 188px is logo width */
+  }
+}
+
