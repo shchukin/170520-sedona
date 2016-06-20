@@ -8,13 +8,19 @@
   text-transform: uppercase;
 }
 
-.heading_size_important {
+/* same on mobile but will grow in size */
+.heading_size_rise {
+
+}
+
+/* a bit larger on mobile and will grow in size */
+.heading_size_grow {
   font-size: 21px;
   line-height: 26px;
 }
 
-/* will grow in size */
-.heading_size_grow {
+/* always same size but a bit larger */
+.heading_size_important {
   font-size: 21px;
   line-height: 26px;
 }
@@ -30,13 +36,18 @@
     line-height: 26px;
   }
 
-  .heading_size_important {
-    /* same to mobile */
+  .heading_size_rise {
+    font-size: 30px;
+    line-height: 26px;
   }
 
   .heading_size_grow {
     font-size: 30px;
     line-height: 26px;
+  }
+
+  .heading_size_important {
+    /* same */
   }
 
 }
