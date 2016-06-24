@@ -51,12 +51,21 @@
     border-bottom: none;
   }
     .form__legend {
-      background: linear-gradient(#dbdbdb, #dbdbdb);
-      background-size: 100% 1px;
-      background-position: center center;
-      background-repeat: no-repeat;
+      position: relative;
     }
+      .form__legend:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 11px;
+        display: block;
+        height: 1px;
+        background: #dbdbdb;
+      }
+
       .form__heading {
+        position: relative;
         display: inline-block;
         vertical-align: top;
         padding: 0 60px;
