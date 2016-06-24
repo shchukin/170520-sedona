@@ -109,12 +109,18 @@ $inputPadding: 20px;
       color: #ff5c5c;
     }
 
+    @media (min-width: $widthTabletStarts) {
+      .input__note {
+        position: absolute;
+        bottom: 100%;
+      }
+
+    }
+
     @media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
 
       .input__note {
-        position: absolute;
         right: 0;
-        bottom: 100%;
       }
 
     }
@@ -122,9 +128,7 @@ $inputPadding: 20px;
     @media (min-width: $widthDesktopStarts) {
 
       .input__note {
-        position: absolute;
         left: 0;
-        bottom: 100%;
       }
 
     }
