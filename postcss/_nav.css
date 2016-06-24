@@ -28,6 +28,7 @@
 
     .nav__logo {
       position: absolute;
+      z-index: 50;
       left: 50%;
       top: 100%;
       margin-left: -55px;
