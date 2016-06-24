@@ -58,7 +58,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 11px;
+        bottom: 50%;
         display: block;
         height: 1px;
         background: #dbdbdb;
@@ -87,8 +87,11 @@
 
     .form__legend {
       text-align: left;
-      background: none;
       transform: translateY(9px);
+    }
+
+    .form__legend:before {
+      display: none;
     }
       .form__heading {
         padding-left: 0;
@@ -109,9 +112,13 @@
 
     .form__legend {
       text-align: left;
-      background: none;
       transform: translateY(9px);
     }
+
+      .form__legend:before {
+        display: none;
+      }
+
       .form__heading {
         padding-left: 0;
         padding-right: 0;
