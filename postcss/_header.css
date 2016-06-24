@@ -8,6 +8,7 @@
   .header__navigation {
     position: relative;
     margin-top: -222px;
+    transition: none;
 
     .header__nav-handler:not(:checked) ~ & {
       margin-top: -222px;
@@ -89,10 +90,16 @@
       right: 0;
       top: 15px;
       margin-top: 0;
+      transition: none;
 
       .header__nav-handler:not(:checked) ~ & {
         margin-top: 0;
       }
+      .header__nav-handler:not(:checked) ~ &,
+      .header__nav-handler:checked ~ & {
+        transition: none;
+      }
+
     }
 
 }
