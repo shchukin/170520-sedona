@@ -33,7 +33,8 @@
     }
 
     .throw-doubt-upon__description {
-      margin-top: 30px;
+      max-width: 430px;
+      margin: 30px auto 0;
     }
 
     .throw-doubt-upon__show {
