@@ -86,18 +86,20 @@
         margin: 33px auto 0;
       }
 
+@media (min-width: $widthTabletStarts) {
+
+  .stage_main .stage__inner {
+    height: 498px;
+    padding-bottom: 21px;
+  }
+
+}
 
 @media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
 
   .stage__inner {
     height: 268px;
     padding-bottom: 22px;
-
-    .stage_main & {
-      height: 498px;
-      padding-bottom: 21px;
-    }
-
   }
 
 }
@@ -107,13 +109,6 @@
   .stage__inner {
     height: 284px;
     padding-bottom: 17px;
-
-    .stage_main & {
-      height: 498px;
-      padding-bottom: 21px;
-    }
-
   }
-
-
+  
 }
