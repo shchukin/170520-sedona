@@ -76,21 +76,23 @@
       border-bottom: 58px solid #81b3d2;
     }
 
+@media (min-width: $widthTabletStarts) {
+
+  .body_main {
+    padding-top: 51px;
+  }
+
+  .body__description {
+    margin-top: 30px;
+  }
+
+}
 
 @media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
 
   .body {
     padding-top: 76px;
   }
-
-  .body_main {
-    padding-top: 51px;
-  }
-
-    .body__description {
-      margin-top: 30px;
-    }
-
     .body__content {
 
       .body_form & {
@@ -117,15 +119,6 @@
   .body {
     padding-top: 113px;
   }
-
-  .body_main {
-    padding-top: 51px;
-  }
-
-    .body__description {
-      margin-top: 30px;
-    }
-
     .body__content {
 
 
