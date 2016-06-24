@@ -13,68 +13,70 @@
 .body_main {
   overflow: hidden; /* to cut angles */
 }
+  .body__head {
 
-  .body__title {
-    text-align: center;
   }
-
-  .body__description {
-    display: block;
-    margin: 26px 0 0;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #333333;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .body__content {
-    position: relative;
-
-    .body_form & {
-      margin-top: 16px;
+    .body__title {
+      text-align: center;
     }
 
-    .body_photo & {
-      margin-top: 26px;
-    }
-
-    .body_main & {
-      margin-top: 42px;
-    }
-  }
-
-    .body__content:before {
-      content: '';
-      position: absolute;
-      left: -20px;
-      right: -20px;
-      top: 0;
+    .body__description {
       display: block;
-      height: 1px;
-      background: #e5e5e5;
+      margin: 26px 0 0;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #333333;
+      text-align: center;
+      text-transform: uppercase;
     }
 
-    .body_main .body__content:before {
-      left: auto;
-      top: auto;
-      right: 50%;
-      bottom: 100%;
-      background: none;
-      height: 0;
-      border-right: 350px solid transparent;
-      border-bottom: 58px solid #81b3d2;
+    .body__content {
+      position: relative;
+
+      .body_form & {
+        margin-top: 16px;
+      }
+
+      .body_photo & {
+        margin-top: 26px;
+      }
+
+      .body_main & {
+        margin-top: 42px;
+      }
     }
 
-    .body_main .body__content:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 100%;
-      border-left: 350px solid transparent;
-      border-bottom: 58px solid #81b3d2;
-    }
+      .body__content:before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        top: 0;
+        display: block;
+        height: 1px;
+        background: #e5e5e5;
+      }
+
+      .body_main .body__content:before {
+        left: auto;
+        top: auto;
+        right: 50%;
+        bottom: 100%;
+        background: none;
+        height: 0;
+        border-right: 350px solid transparent;
+        border-bottom: 58px solid #81b3d2;
+      }
+
+      .body_main .body__content:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        border-left: 350px solid transparent;
+        border-bottom: 58px solid #81b3d2;
+      }
 
 @media (min-width: $widthTabletStarts) {
 
@@ -85,6 +87,14 @@
   .body__description {
     margin-top: 30px;
   }
+    .body__head {
+      max-width: 440px;
+      margin: 0 auto;
+
+      .body_main & {
+        max-width: 600px;
+      }
+    }
 
 }
 
