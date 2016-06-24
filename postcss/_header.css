@@ -20,6 +20,7 @@
       transition: margin-top .5s ease;
     }
   }
+
     .header__hide-nav {
       position: absolute;
       right: 0;
@@ -30,31 +31,9 @@
       }
     }
 
-  .header__bar {
-    position: relative;
-    height: 56px;
+  .header__show-nav {
+    margin-left: auto;
   }
-    .header__logo {
-      position: absolute;
-      z-index: 400;
-      left: 50%;
-      top: 0;
-      transform: translate(-50%,0);
-    }
-      .header__emblem {
-
-      }
-
-    .header__show-nav {
-      position: absolute;
-      right: 0;
-      top: 0;
-
-      &.burger {
-        position: absolute;
-      }
-    }
-
 
   .header__hide-nav {
 
@@ -84,11 +63,6 @@
 
 
     .header__navigation {
-      position: absolute;
-      z-index: 100;
-      left: 0;
-      right: 0;
-      top: 15px;
       margin-top: 0;
       transition: none;
 
