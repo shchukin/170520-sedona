@@ -81,16 +81,18 @@
     .advantage__summary {
       box-sizing: border-box;
       height: 256px;
-      padding: 46px 20px 45px;
+      padding: 46px 30px 45px;
 
       .advantage_highlight & {
         padding-top: 46px;
       }
 
     }
+      .advantage__title {
+        padding: 0 20px;
+      }
       .advantage__thing {
         margin-top: 21px;
-        white-space: nowrap; /* we will control line breaks manually in html code */
       }
 
     .advantage__properties {
@@ -135,3 +137,9 @@
   }
 }
 
+@media (min-width: $widthDesktopStarts) {
+  .advantage__summary {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
