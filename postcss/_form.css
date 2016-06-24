@@ -81,7 +81,6 @@
   .form__fieldset_id_person {
     box-sizing: border-box;
     width: 50%;
-    min-width: 50%;
     order: 2;
     box-shadow: -1px 0 0 #dbdbdb;
 
@@ -101,13 +100,11 @@
 
   .form__fieldset_id_contacts {
     width: 100%;
-    min-width: 100%;
     order: 3;
   }
 
   .form__fieldset_id_impression {
     width: 50%;
-    min-width: 50%;
     order: 1;
 
     .form__legend {
@@ -127,19 +124,16 @@
 
   .form__fieldset_id_attractions {
     width: 100%;
-    min-width: 100%;
     order: 4;
   }
 
   .form__fieldset_id_emotions {
     width: 100%;
-    min-width: 100%;
     order: 5;
   }
 
   .form__actions {
     width: 100%;
-    min-width: 100%;
     order: 6;
     display: flex;
     padding-left: 0;
