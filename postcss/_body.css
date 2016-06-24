@@ -11,7 +11,7 @@
 }
 
 .body_main {
-
+  overflow: hidden; /* to cut angles */
 }
 
   .body__title {
