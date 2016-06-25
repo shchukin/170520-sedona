@@ -1,0 +1,30 @@
+.container {
+  padding: 0 20px;
+  background: #fff; /* also needed to overlay shadow of previous container */
+}
+
+.container_desktop-only {
+  padding: 0;
+}
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+  .container {
+    padding-left: 7.8125%;
+    padding-right: 7.8125%;
+  }
+
+  .container_desktop-only {
+    padding: 0;
+  }
+}
+
+@media (min-width: $widthDesktopStarts) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  }
+}
+
+

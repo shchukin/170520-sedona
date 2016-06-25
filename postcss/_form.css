@@ -1,27 +1,196 @@
 .form {
-
+  padding: 0 0 38px;
 }
   .form__fieldset {
-    margin: 0;
     border: 0;
-    padding: 39px 6.25% 25px;
+    margin: 0 -20px;
+    padding: 39px 20px 25px;
     border-bottom: 1px solid #e5e5e5;
   }
+
+  .form__fieldset:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
     .form__legend {
-      transform: translateY(19px); /* cause <legend> styles */
+      display: block;
       padding: 0;
       width: 100%;
+      transform: translateY(19px); /* cause <legend> styles */
       text-align: center;
     }
+      .form__heading {
 
-    .form__field {
-      margin: 20px 0 0;
-    }
+      }
 
-    .form__field:first-of-type {
-      margin-top: 0;
-    }
-
-  .form__submit {
-    padding: 50px 6.25% 37px;
+  .form__actions {
+    padding: 50px 0 0;
   }
+    .form__submit {
+
+    }
+
+    .form__note {
+      display: none;
+    }
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .form {
+    padding-bottom: 60px;
+  }
+
+  .form__fieldset {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+    .form__legend {
+      position: relative;
+    }
+      .form__legend:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: block;
+        height: 1px;
+        background: #dbdbdb;
+      }
+
+      .form__heading {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 60px;
+        margin-bottom: -2px;
+        background: #fff;
+      }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset_id_person {
+    box-sizing: border-box;
+    width: 50%;
+    order: 2;
+    box-shadow: -1px 0 0 #dbdbdb;
+
+    .form__legend {
+      text-align: left;
+      transform: translateY(9px);
+    }
+
+    .form__legend:before {
+      display: none;
+    }
+      .form__heading {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  }
+
+  .form__fieldset_id_contacts {
+    width: 100%;
+    order: 3;
+  }
+
+  .form__fieldset_id_impression {
+    width: 50%;
+    order: 1;
+
+    .form__legend {
+      text-align: left;
+      transform: translateY(9px);
+    }
+
+      .form__legend:before {
+        display: none;
+      }
+
+      .form__heading {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  }
+
+  .form__fieldset_id_attractions {
+    width: 100%;
+    order: 4;
+  }
+
+  .form__fieldset_id_emotions {
+    width: 100%;
+    order: 5;
+  }
+
+  .form__actions {
+    width: 100%;
+    order: 6;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+    .form__submit {
+      flex: 0 0 50%;
+    }
+
+    .form__note {
+      flex: 0 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 6px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+}
+
+@media (min-width: $widthTabletStarts) {
+
+  .form__fieldset_id_impression {
+    margin-bottom: 50px;
+  }
+
+  .form__fieldset_id_person {
+    padding-left: 60px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (min-width: $widthDesktopStarts) {
+
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__fieldset_id_person {
+    padding-left: 80px;
+  }
+
+  .form__fieldset_id_attractions {
+
+  }
+
+  .form__fieldset_id_impression {
+
+    .form__legend {
+      padding-left: 78px;
+    }
+
+  }
+
+}

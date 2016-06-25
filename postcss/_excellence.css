@@ -1,0 +1,32 @@
+.excellence {
+
+}
+  .excellence__item {
+
+  }
+
+  .excellence__item_detailed {
+
+  }
+
+
+
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .excellence {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .excellence__item {
+      flex-grow: 1;
+      max-width: 33.333%;
+    }
+
+    .excellence__item_detailed {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+}

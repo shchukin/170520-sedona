@@ -1,0 +1,46 @@
+.contacts {
+  margin: -6px 0 0;
+}
+  .contacts__tel {
+
+  }
+
+  .contacts__email {
+    margin: -1px 0 0;
+  }
+
+
+@media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+
+
+  .contacts {
+    margin-top: 0;
+    padding-bottom: 34px;
+  }
+
+  .contacts__email {
+    margin-top: 18px;
+  }
+
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+
+  .contacts {
+    display: flex;
+    padding-top: 61px;
+    padding-bottom: 34px;
+  }
+    .contacts__tel {
+      padding-right: 80px;
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    .contacts__email {
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+}

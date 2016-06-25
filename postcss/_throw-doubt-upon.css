@@ -1,5 +1,5 @@
 .throw-doubt-upon {
-  padding: 34px 0 0;
+  padding: 34px 0 41px;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -17,5 +17,43 @@
 
 
   .throw-doubt-upon__show {
-    margin: 34px 0 0;
+    margin: 34px -20px 0;
   }
+
+
+@media (min-width: $widthTabletStarts) {
+  .throw-doubt-upon {
+    padding-top: 68px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    .throw-doubt-upon__title {
+
+    }
+
+    .throw-doubt-upon__description {
+      max-width: 430px;
+      margin: 30px auto 0;
+    }
+
+    .throw-doubt-upon__show {
+      margin-top: 73px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+  .throw-doubt-upon {
+    width: 800px;
+    padding-top: 72px;
+    padding-bottom: 85px;
+    margin: 0 auto;
+  }
+
+  .throw-doubt-upon__show {
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,22 @@
+.impression {
+
+}
+  .impression__item {
+    margin: 11px 0 0;
+  }
+
+  .impression__item:first-child {
+    margin-top: 0;
+  }
+
+
+@media (min-width: $widthTabletStarts) {
+  .impression {
+    padding-top: 29px;
+  }
+
+  .impression__item {
+    margin-top: 20px;
+  }
+
+}

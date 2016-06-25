@@ -1,0 +1,11 @@
+.emotions {
+
+}
+
+
+@media (min-width: $widthTabletStarts) {
+  .emotions {
+    padding-top: 38px;
+    padding-bottom: 7px;
+  }
+}

@@ -7,17 +7,20 @@
 
   .header__navigation {
     position: relative;
-    transition: margin-top .5s ease;
     margin-top: -222px;
+    transition: none;
 
     .header__nav-handler:not(:checked) ~ & {
       margin-top: -222px;
+      transition: margin-top .5s ease;
     }
 
     .header__nav-handler:checked ~ & {
       margin-top: 0;
+      transition: margin-top .5s ease;
     }
   }
+
     .header__hide-nav {
       position: absolute;
       right: 0;
@@ -28,31 +31,50 @@
       }
     }
 
-  .header__bar {
-    position: relative;
-    height: 56px;
+  .header__show-nav {
+    margin-left: auto;
   }
-    .header__logo {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translate(-50%,0);
-    }
-      .header__emblem {
-
-      }
-
-    .header__show-nav {
-      position: absolute;
-      right: 0;
-      top: 0;
-
-      &.burger {
-        position: absolute;
-      }
-    }
-
 
   .header__hide-nav {
 
   }
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .header {
+    position: relative;
+  }
+    .header__hide-nav {
+      display: none;
+
+      &.cancel {
+         display: none;
+       }
+    }
+
+    .header__show-nav {
+      display: none;
+
+      &.burger {
+         display: none;
+       }
+    }
+
+
+    .header__navigation {
+      margin-top: 0;
+      transition: none;
+
+      .header__nav-handler:not(:checked) ~ & {
+        margin-top: 0;
+      }
+      .header__nav-handler:not(:checked) ~ &,
+      .header__nav-handler:checked ~ & {
+        transition: none;
+      }
+
+    }
+
+}
+
