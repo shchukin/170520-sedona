@@ -36,3 +36,6 @@
 @import "_hide.css";
 @import "_player.css";
 @import "_control.css";
+@import "_popup.css";
+@import "_html-lock.css";
+@import "_scrollbar-measure.css";
