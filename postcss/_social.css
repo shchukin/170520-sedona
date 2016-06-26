@@ -5,11 +5,24 @@
   height: 48px;
   background: #81b3d2;
 }
+
+.social:hover {
+  background-color: #669ec0;
+}
+
+.social:active {
+  background-color: #5496bd;
+}
+
   .social__icon {
     position: absolute;
     left: 50%;
     top: 50%;
     display: block;
+
+    .social:active & {
+      opacity: .3;
+    }
 
     .social_network_twitter & {
       width: 18px;
