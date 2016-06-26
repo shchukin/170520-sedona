@@ -1,5 +1,13 @@
 $buttonHeight: 58px;
 
+
+@keyframes button-blink {
+  0% { background-color: #5496bd; }
+  50% { background-color: #3e84ae; }
+  100% { background-color: #5496bd; }
+}
+
+
 .button {
   display: block;
   box-sizing: border-box;
@@ -16,4 +24,27 @@ $buttonHeight: 58px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+
+.button_disabled,
+.button_disabled:hover,
+.button_disabled:active {
+  background-color: #e5e5e5;
+  color: #fff;
+  cursor: default;
+}
+
+
+.button_in-progress {
+  animation: button-blink .75s linear infinite;
 }
