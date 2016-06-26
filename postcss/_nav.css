@@ -67,6 +67,27 @@
         border: none;
       }
 
+      .nav__link:hover {
+        color: #81b3d2;
+      }
+
+      .nav__link:active {
+        color: #cacaca;
+      }
+
+
+      .nav__link_current {
+        color: #766357;
+      }
+
+      .nav__link_current:hover {
+        color: #604e43;
+      }
+
+      .nav__link_current:active {
+        color: #dbd8d5;
+      }
+
     .nav__logo {
       flex-grow: 0;
       margin: 0 4%;
