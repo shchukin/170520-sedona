@@ -98,6 +98,15 @@ $inputPadding: 20px;
       }
     }
 
+    .input__widget:hover {
+      background-color: #e5e5e5;
+    }
+
+    .input__widget:focus {
+      box-shadow: inset 0 0 0 4px #e5e5e5;
+      background-color: #fff;
+    }
+
 
     /* note */
 
