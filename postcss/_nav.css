@@ -50,8 +50,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 46px;
-    padding: 0 3%;
+    height: 56px;
     background: none;
     box-shadow: none;
     font-size: 14px;
@@ -75,4 +74,11 @@
       position: static;
     }
 
+}
+
+@media (min-width: $widthDesktopStarts) {
+  .nav {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
