@@ -6,10 +6,43 @@
   color: #333333;
   text-transform: uppercase;
 }
+
+.param_id_apartments {
+
+}
+
+.param_id_gifts {
+
+}
+
+.param_id_food {
+
+}
+
   .param__icon {
     position: absolute;
     left: 0;
     top: 0;
+
+    .param_id_apartments & {
+      width: 39px;
+      height: 37px;
+    }
+
+    .param_id_gifts & {
+      width: 32px;
+      height: 38px;
+      margin-top: -3px;
+      margin-left: 5px;
+    }
+
+    .param_id_food & {
+      width: 40px;
+      height: 35px;
+      margin-top: 5px;
+      margin-left: -2px;
+    }
+
   }
 
   .param__title {
@@ -27,15 +60,29 @@
   .param {
     box-sizing: border-box;
     height: 330px;
-    padding: 44px 20px 0;
+    padding: 61px 20px 0;
     text-align: center;
   }
     .param__icon {
       position: static;
       left: auto;
       top: auto;
-      width: 90px;
-      height: 90px;
+      margin: 0;
+
+      .param_id_apartments & {
+        width: 75px;
+        height: 73px;
+      }
+
+      .param_id_gifts & {
+        width: 63px;
+        height: 76px;
+      }
+
+      .param_id_food & {
+        width: 77px;
+        height: 67px;
+      }
     }
 
     .param__title {
