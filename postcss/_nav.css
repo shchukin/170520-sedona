@@ -29,6 +29,15 @@
       }
     }
 
+    .nav__link:hover {
+      background-color: #669ec0;
+    }
+
+    .nav__link:active {
+      background-color: #5496bd;
+      color: #94b9d2;
+    }
+
   .nav__logo {
     position: absolute;
     z-index: 50;
@@ -68,10 +77,12 @@
       }
 
       .nav__link:hover {
+        background-color: transparent;
         color: #81b3d2;
       }
 
       .nav__link:active {
+        background-color: transparent;
         color: #cacaca;
       }
 
