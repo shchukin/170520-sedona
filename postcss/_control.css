@@ -33,8 +33,18 @@
 
   }
 
+  .control:hover #control__background {
+    fill: #333;
+  }
+
+  .control:active #control__background {
+    fill: #c1c1c1;
+  }
+
 @media (min-width: $widthTabletStarts) {
-  #control__background {
+  #control__background,
+  .control:hover #control__background,
+  .control:active #control__background {
     fill: #fff;
   }
 }
