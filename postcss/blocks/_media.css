@@ -9,7 +9,8 @@
     margin: 0;
   }
     .media__photo {
-
+      display: block;
+      text-decoration: none;
     }
       .media__pic {
         vertical-align: top;
