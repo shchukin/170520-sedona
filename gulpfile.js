@@ -20,12 +20,6 @@ gulp.task("clean", function() {
   del("build");
 });
 
-gulp.task("pages", function() {
-  gulp.src("*.html")
-    .pipe(plumber())
-    .pipe(gulp.dest("build"));
-});
-
 gulp.task("fonts", function() {
   gulp.src("img/**/*")
     .pipe(plumber())
@@ -43,6 +37,14 @@ gulp.task("vendors", function() {
   gulp.src("vendors/**/*")
     .pipe(plumber())
     .pipe(gulp.dest("build/vendors"));
+});
+
+
+gulp.task("pages", function() {
+  gulp.src("*.html")
+    .pipe(plumber())
+    .pipe(gulp.dest("build"))
+    .pipe(server.reload({stream: true}));
 });
 
 gulp.task("images", function() {
@@ -105,5 +107,5 @@ gulp.task("serve", ["build"], function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["pages"]);
 });
