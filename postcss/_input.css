@@ -98,6 +98,12 @@ $inputPadding: 20px;
       }
     }
 
+
+    .input__widget::-webkit-input-placeholder { font-style: normal; opacity: 1; color: inherit; }
+    .input__widget::-moz-placeholder          { font-style: normal; opacity: 1; color: inherit; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; opacity: 1; color: inherit; }
+
+
     .input__widget:hover {
       background-color: #e5e5e5;
     }
