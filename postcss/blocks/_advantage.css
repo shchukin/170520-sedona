@@ -47,7 +47,7 @@
 
   .advantage__background {
     position: relative;
-    height: 256px;
+    min-height: 256px;
     overflow: hidden;
     background-color: #e1b39f;
   }
@@ -81,7 +81,7 @@
   }
     .advantage__summary {
       box-sizing: border-box;
-      height: 256px;
+      min-height: 256px;
       padding: 46px 30px 45px;
 
       .advantage_highlight & {
