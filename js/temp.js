@@ -101,6 +101,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var $form = document.querySelector('.form');
   var $formSubmit = document.querySelector('.form__submit');
 
+  $formSubmit.classList.add('button_disabled');
+
+
   if( $form && $formSubmit ) {
     $form.addEventListener('change', function () {
       $formSubmit.classList.remove('button_disabled');
@@ -125,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       setTimeout(function () {
         element.classList.remove('button_in-progress');
-        
+
         parseInt(Math.random() * 2) ? popupShow($popupSuccess) : popupShow($popupError);
 
       }, 3000)
