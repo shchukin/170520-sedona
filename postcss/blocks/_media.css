@@ -1,0 +1,117 @@
+.media {
+
+}
+
+.media_detailed {
+
+}
+  .media__stage {
+    margin: 0;
+  }
+    .media__photo {
+      display: block;
+      text-decoration: none;
+      background: #f6b774;
+    }
+      .media__pic {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+      }
+
+    .media__caption {
+      margin: 16px 0 0;
+      font-size: 14px;
+      line-height: 24px;
+      color: #333333;
+    }
+      .media__footer {
+
+      }
+        .media__title {
+          display: block;
+          font-weight: bold;
+          color: #000000;
+          text-transform: uppercase;
+        }
+
+        .media__credits {
+          display: block;
+        }
+
+      .media__like {
+        margin: 8px 0 0;
+      }
+
+
+@media (min-width: $widthTabletStarts) {
+  .media {
+    position: relative;
+  }
+    .media__photo {
+      position: relative;
+      height: 267px;
+      overflow: hidden;
+
+      .media_detailed & {
+        height: 400px;
+      }
+    }
+      .media__pic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+        transform: translate(-50%, -50%);
+      }
+
+    .media__caption {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      padding: 16px 20px;
+      background-color: #f2f2f2;
+    }
+      .media__footer {
+        flex-grow: 1;
+      }
+        .media__title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .media__credits {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+      .media__like {
+        margin-top: 0;
+      }
+}
+
+
+@media (min-width: $widthDesktopStarts) {
+  .media {
+    position: relative;
+  }
+    .media__caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.3);
+    }
+      .media__title {
+        color: #fff;
+      }
+
+      .media__credits {
+        color: #fff;
+      }
+}

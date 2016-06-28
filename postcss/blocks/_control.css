@@ -1,0 +1,51 @@
+.control {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+  .control__icon {
+    position: absolute;
+    fill: #5c6870;
+
+    .control_id_playback & {
+      left: 12px;
+      top: 7px;
+      width: 16px;
+      height: 20px;
+    }
+
+    .control_id_captions & {
+      left: 4px;
+      top: 10px;
+      width: 32px;
+      height: 20px;
+    }
+
+    .control_id_full-screen & {
+      left: 10px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+  .control:hover .control__icon {
+    fill: #333;
+  }
+
+  .control:active .control__icon {
+    fill: #c1c1c1;
+  }
+
+@media (min-width: $widthTabletStarts) {
+  .control__icon,
+  .control:hover .control__icon,
+  .control:active .control__icon {
+    fill: #fff;
+  }
+}

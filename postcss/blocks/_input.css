@@ -1,0 +1,188 @@
+$inputHeight: 58px;
+$inputPadding: 20px;
+
+.input {
+  position: relative;
+}
+
+.input_error {
+
+}
+
+.input_type_area {
+
+}
+
+  /* label */
+
+  .input__label {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 $inputPadding;
+    font-size: 14px;
+    line-height: 38px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+  }
+
+  .input__label_visibility_hidden {
+    display: none;
+  }
+
+
+
+  /* container */
+
+  .input__container {
+    position: relative;
+  }
+
+
+    /* icon */
+
+    .input__icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: $inputHeight;
+      height: $inputHeight;
+      background: #e6e6e6;
+    }
+
+      .input__pic {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+
+        .input__icon_pic_tel & {
+          width: 18px;
+          height: 18px;
+          margin: -9px 0 0 -9px;
+        }
+
+        .input__icon_pic_email & {
+          width: 16px;
+          height: 16px;
+          margin: -8px 0 0 -8px;
+        }
+
+      }
+
+
+
+    /* widget */
+
+    .input__widget {
+      box-sizing: border-box;
+      width: 100%;
+      height: $inputHeight;
+      border: none;
+      padding: 0 $inputPadding;
+      background: #f2f2f2;
+      box-shadow: none;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      color: #000000;
+
+      .input_type_area & {
+        vertical-align: top;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        height: 162px; /* 5 lines */
+        resize: vertical;
+      }
+    }
+
+
+    .input__widget::-webkit-input-placeholder { font-style: normal; opacity: 1; color: inherit; }
+    .input__widget::-moz-placeholder          { font-style: normal; opacity: 1; color: inherit; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; opacity: 1; color: inherit; }
+
+
+    .input__widget:hover {
+      background-color: #e5e5e5;
+    }
+
+    .input__widget:focus {
+      box-shadow: inset 0 0 0 4px #e5e5e5;
+      background-color: #fff;
+    }
+
+
+    /* note */
+
+    .input__note {
+      margin: 0 $inputPadding;
+      font-size: 14px;
+      line-height: 38px;
+      color: #ff5c5c;
+    }
+
+    @media (min-width: $widthTabletStarts) {
+      .input__note {
+        position: absolute;
+        bottom: 100%;
+      }
+
+    }
+
+    @media (min-width: $widthTabletStarts) and (max-width: $widthTabletEnds) {
+
+      .input__note {
+        right: 0;
+      }
+
+    }
+
+    @media (min-width: $widthDesktopStarts) {
+
+      .input__note {
+        left: 0;
+      }
+
+    }
+
+
+
+/* collapse all */
+
+.input_collapse_all {
+  display: flex;
+  align-items: center;
+
+  .input__label {
+    flex-shrink: 0;
+    margin: 4px 18px 0 0;
+  }
+
+  .input__container {
+    flex-grow: 1;
+  }
+
+}
+
+
+/* collapse desktop only */
+
+
+@media (min-width: $widthDesktopStarts) {
+  .input_collapse_desktop {
+    display: flex;
+    align-items: center;
+
+    .input__label {
+      flex-shrink: 0;
+      margin: 4px 18px 0 0;
+    }
+
+    .input__container {
+      flex-grow: 1;
+    }
+  }
+
+}
