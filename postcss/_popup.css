@@ -1,0 +1,149 @@
+.popup {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  font-size: 0; /* to kill empty space between window and 100% height strut */
+  white-space: nowrap; /* prevent strut jumping over window */
+  text-align: center;
+  display: none;
+}
+
+.popup_success {
+
+}
+
+.popup_error {
+
+}
+
+.popup_visible {
+  display: block;
+}
+
+  .popup:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .popup__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+  }
+
+  .popup__window {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+    width: 280px;
+    background: #fff;
+    box-shadow: 0 7px 15px rgba(0,0,0,.15);
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    text-align: center;
+    white-space: normal;
+    text-transform: uppercase;
+  }
+
+    .popup__body {
+      padding: 40px 30px 0;
+    }
+
+      .popup__title {
+
+      }
+
+      .popup__description {
+        margin: 26px 0 0;
+      }
+
+    .popup__foot {
+      padding: 22px 60px 35px;
+    }
+      .popup__action {
+
+      }
+
+
+.popup_success {
+
+  .popup__foot {
+    margin-top: 33px;
+    padding: 20px;
+    background: #f2f2f2;
+  }
+
+}
+
+
+@media (min-width: $widthTabletStarts) {
+
+  .popup_success {
+
+    .popup__window {
+      width: 640px;
+    }
+      .popup__body {
+        padding-top: 64px;
+      }
+
+      .popup__title {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .popup__description {
+        margin-top: 30px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .popup__foot {
+        margin-top: 33px;
+        padding: 44px 90px;
+      }
+
+  }
+
+
+  .popup_error {
+
+    .popup__window {
+      width: 400px;
+    }
+      .popup__body {
+        padding: 57px 54px 0;
+      }
+
+      .popup__title {
+        line-height: 40px;
+
+        &.heading {
+          line-height: 40px;
+        }
+      }
+
+    .popup__description {
+      margin-top: 23px;
+    }
+
+      .popup__foot {
+        padding-top: 33px;
+        padding-bottom: 49px;
+      }
+
+  }
+
+}

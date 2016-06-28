@@ -57,6 +57,20 @@ $choice__iconHeight: 58px; /* same to inputs */
       outline: auto;
     }
 
+    .choice:hover & {
+      background-color: #e5e5e5;
+    }
+
+    .choice:active & {
+      background-color: #d5d5d5;
+    }
+
+    /* no hovers for checked radio */
+    .choice_type_radio .choice__widget:checked ~ & {
+      background-color: #f2f2f2;
+      cursor: default;
+    }
+
   }
 
     .choice__icon:after {

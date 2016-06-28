@@ -1,8 +1,33 @@
 .stage {
   position: relative;
   overflow: hidden; /* to crop angles */
-  background: red;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
+
+/* backgrounds */
+.stage {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  .stage {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }
+}
+
+@media (min-width: $widthTabletStarts) {
+  .stage {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) {
+    .stage {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+    }
+  }
+}
+
 
 .stage_main {
 
@@ -70,28 +95,38 @@
       border-left: 350px solid transparent;
       border-bottom: 58px solid #fff;
     }
+      .stage__title {
+        width: 230px;
+        height: 40px;
 
-      .stage__welcome {
-        display: block;
-        margin: 0 auto 33px;
+        .stage_main & {
+          width: 286px;
+          height: 213px;
+        }
       }
 
-      .stage__slogan {
-        display: block;
-        margin: 0 auto;
-      }
-
-      .stage__slogan {
-        display: block;
-        margin: 33px auto 0;
-      }
 
 @media (min-width: $widthTabletStarts) {
 
-  .stage_main .stage__inner {
-    height: 498px;
-    padding-bottom: 21px;
+  .stage__inner {
+
+    .stage_main & {
+      height: 498px;
+      padding-bottom: 21px;
+    }
   }
+
+  .stage__title {
+    width: 460px;
+    height: 80px;
+
+    .stage_main & {
+      width: 460px;
+      height: 351px;
+    }
+  }
+
+
 
 }
 
@@ -110,5 +145,5 @@
     height: 284px;
     padding-bottom: 17px;
   }
-  
+
 }

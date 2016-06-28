@@ -13,28 +13,21 @@
 .like_for-media {
 
 }
-
-
-  .like:before {
-    content: '!';
+  .like__icon {
     position: absolute;
     left: 0;
-    top: 0;
-    display: block;
-    width: 24px;
+    top: -2px;
+    width: 22px;
     height: 21px;
-    background: purple;
-    text-align: center;
-    color: #fff;
   }
 
 
 @media (min-width: $widthDesktopStarts) {
-  .like_for-media {
+  .like {
     color: #fff;
   }
-  .like_for-media:before {
-    background-color: #fff;
-    color: purple;
+
+  #like__palm {
+    fill: #ffffff;
   }
 }

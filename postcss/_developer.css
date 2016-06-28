@@ -8,6 +8,24 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.developer:hover  {
+  color: #81b3d2;
+
+  #developer__emblem {
+    fill: #81b3d2;
+  }
+}
+
+.developer:active  {
+  color: #b2b2b2;
+
+  #developer__emblem {
+    fill: #b2b2b2;
+  }
+}
+
+
   .developer__title {
     margin: 0 10px 0 0;
   }

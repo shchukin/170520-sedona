@@ -52,27 +52,26 @@ $inputPadding: 20px;
       background: #e6e6e6;
     }
 
-      .input__icon:after {
-        content: '';
+      .input__pic {
         position: absolute;
         left: 50%;
         top: 50%;
         display: block;
+
+        .input__icon_pic_tel & {
+          width: 18px;
+          height: 18px;
+          margin: -9px 0 0 -9px;
+        }
+
+        .input__icon_pic_email & {
+          width: 16px;
+          height: 16px;
+          margin: -8px 0 0 -8px;
+        }
+
       }
 
-      .input__icon_pic_tel:after {
-        width: 18px;
-        height: 18px;
-        margin: -9px 0 0 -9px;
-        background-image: url(../img/icon-phone.svg);
-      }
-
-      .input__icon_pic_email:after {
-        width: 16px;
-        height: 16px;
-        margin: -8px 0 0 -8px;
-        background-image: url(../img/icon-mail.svg);
-      }
 
 
     /* widget */
@@ -97,6 +96,15 @@ $inputPadding: 20px;
         height: 162px; /* 5 lines */
         resize: vertical;
       }
+    }
+
+    .input__widget:hover {
+      background-color: #e5e5e5;
+    }
+
+    .input__widget:focus {
+      box-shadow: inset 0 0 0 4px #e5e5e5;
+      background-color: #fff;
     }
 
 
