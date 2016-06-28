@@ -5,7 +5,7 @@ $choice__iconHeight: 58px; /* same to inputs */
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding: 0 0 0 78px;
+  padding: 0 0 0 $choice__iconHeight;
   line-height: $choice__iconHeight;
   cursor: pointer;
 }
@@ -95,13 +95,23 @@ $choice__iconHeight: 58px; /* same to inputs */
         background: url(../img/icon-tick.svg) no-repeat center center;
         background-size: 100%;
       }
+
+      .choice_type_check .choice__widget:checked:active ~ & {
+        opacity: 0.3;
+      }
     }
 
   .choice__label {
     display: inline-block;
     vertical-align: middle;
+    padding: 0 0 0 20px;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
     color: #000000;
+
+    /* no hovers for checked radio */
+    .choice_type_radio .choice__widget:checked ~ & {
+      cursor: default;
+    }
   }
