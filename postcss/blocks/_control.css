@@ -9,6 +9,7 @@
 }
   .control__icon {
     position: absolute;
+    fill: #5c6870;
 
     .control_id_playback & {
       left: 12px;
@@ -33,18 +34,18 @@
 
   }
 
-  .control:hover #control__background {
+  .control:hover .control__icon {
     fill: #333;
   }
 
-  .control:active #control__background {
+  .control:active .control__icon {
     fill: #c1c1c1;
   }
 
 @media (min-width: $widthTabletStarts) {
-  #control__background,
-  .control:hover #control__background,
-  .control:active #control__background {
+  .control__icon,
+  .control:hover .control__icon,
+  .control:active .control__icon {
     fill: #fff;
   }
 }

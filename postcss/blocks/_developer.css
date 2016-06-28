@@ -12,7 +12,7 @@
 .developer:hover  {
   color: #81b3d2;
 
-  #developer__emblem {
+  .developer__logo {
     fill: #81b3d2;
   }
 }
@@ -20,7 +20,7 @@
 .developer:active  {
   color: #b2b2b2;
 
-  #developer__emblem {
+  .developer__logo {
     fill: #b2b2b2;
   }
 }

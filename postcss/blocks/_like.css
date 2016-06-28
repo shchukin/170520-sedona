@@ -19,6 +19,7 @@
     top: -2px;
     width: 22px;
     height: 21px;
+    fill: #b2b2b2;
   }
 
 
@@ -27,7 +28,7 @@
     color: #fff;
   }
 
-  #like__palm {
-    fill: #ffffff;
+  .like__icon {
+    fill: #FFFFFF
   }
 }
