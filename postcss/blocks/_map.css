@@ -1,6 +1,7 @@
 .map {
   position: relative;
   height: 350px;
+  background: #efebe2;
 }
   .map__static {
     position: relative;

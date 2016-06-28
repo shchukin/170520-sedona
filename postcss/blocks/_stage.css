@@ -1,6 +1,7 @@
 .stage {
   position: relative;
   overflow: hidden; /* to crop angles */
+  background-color: #a2abc8;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

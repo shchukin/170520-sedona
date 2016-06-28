@@ -49,6 +49,7 @@
     position: relative;
     height: 256px;
     overflow: hidden;
+    background-color: #e1b39f;
   }
     .advantage__pic {
       position: absolute;

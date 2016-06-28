@@ -11,6 +11,7 @@
     .media__photo {
       display: block;
       text-decoration: none;
+      background: #f6b774;
     }
       .media__pic {
         vertical-align: top;
