@@ -35,5 +35,7 @@
   }
 
   .developer__logo {
+    width: 28px;
+    height: 34px;
     vertical-align: top;
   }
