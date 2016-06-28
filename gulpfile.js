@@ -12,7 +12,13 @@ var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var svgmin = require('gulp-svgmin');
 var svgstore = require("gulp-svgstore");
+var del = require("del");
+var run = require("run-sequence");
 
+
+gulp.task("clean", function() {
+  del("build");
+});
 
 gulp.task("pages", function() {
   gulp.src("*.html")
@@ -86,8 +92,8 @@ gulp.task("style", function() {
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task("build", ["style", "images", "symbols", "pages", "fonts", "scripts", "vendors"], function () {
-
+gulp.task("build", function (fn) {
+  run("clean", "style", "images", "symbols", "pages", "fonts", "scripts", "vendors", fn);
 });
 
 gulp.task("serve", ["build"], function() {
