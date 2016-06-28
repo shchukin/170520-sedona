@@ -1,6 +1,3 @@
-$buttonHeight: 58px;
-
-
 @keyframes button-blink {
   0% { background-color: #5496bd; }
   50% { background-color: #3e84ae; }
@@ -12,13 +9,13 @@ $buttonHeight: 58px;
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: $button_height;
+  height: 58px;
   border: none;
   padding: 0 10px;
   background: #81b3d2;
   font-weight: bold;
   font-size: 21px;
-  line-height: $buttonHeight;
+  line-height: 58px;
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
