@@ -101,8 +101,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var $form = document.querySelector('.form');
   var $formSubmit = document.querySelector('.form__submit');
 
-  $formSubmit.classList.add('button_disabled');
-
+  if ( $formSubmit ) {
+    $formSubmit.classList.add('button_disabled');
+  }
 
   if( $form && $formSubmit ) {
     $form.addEventListener('change', function () {
