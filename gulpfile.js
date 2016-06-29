@@ -21,7 +21,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("fonts", function() {
-  gulp.src("img/**/*")
+  gulp.src("fonts/**/*")
     .pipe(plumber())
     .pipe(gulp.dest("build/fonts"));
 });
