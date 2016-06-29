@@ -33,13 +33,6 @@ gulp.task("scripts", function() {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("vendors", function() {
-  gulp.src("vendors/**/*")
-    .pipe(plumber())
-    .pipe(gulp.dest("build/vendors"));
-});
-
-
 gulp.task("pages", function() {
   gulp.src("*.html")
     .pipe(plumber())
@@ -95,7 +88,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("build", function (fn) {
-  run("clean", "style", "images", "symbols", "pages", "fonts", "scripts", "vendors", fn);
+  run("clean", "style", "images", "symbols", "pages", "fonts", "scripts", fn);
 });
 
 gulp.task("serve", ["build"], function() {
