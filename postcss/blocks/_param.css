@@ -59,8 +59,8 @@
 
   .param {
     box-sizing: border-box;
-    height: 330px;
-    padding: 61px 20px 0;
+    min-height: 330px;
+    padding: 61px 20px 40px;
     text-align: center;
   }
     .param__icon {

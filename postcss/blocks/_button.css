@@ -9,13 +9,12 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 58px;
   border: none;
-  padding: 0 10px;
+  padding: 10px;
   background: #81b3d2;
   font-weight: bold;
   font-size: 21px;
-  line-height: 58px;
+  line-height: 38px;
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
