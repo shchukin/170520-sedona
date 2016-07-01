@@ -158,6 +158,7 @@ $inputPadding: 20px;
   .input__label {
     flex-shrink: 0;
     margin: 4px 18px 0 0;
+    max-width: 160px;
   }
 
   .input__container {
@@ -178,6 +179,7 @@ $inputPadding: 20px;
     .input__label {
       flex-shrink: 0;
       margin: 4px 18px 0 0;
+      max-width: 160px;
     }
 
     .input__container {
