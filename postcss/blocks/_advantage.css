@@ -82,7 +82,7 @@
     .advantage__summary {
       box-sizing: border-box;
       min-height: 256px;
-      padding: 46px 30px 45px;
+      padding: 46px 20px 45px;
 
       .advantage_highlight & {
         padding-top: 46px;
@@ -90,10 +90,12 @@
 
     }
       .advantage__title {
-        padding: 0 20px;
+        width: 150px;
+        margin: 0 auto;
       }
       .advantage__thing {
-        margin-top: 21px;
+        width: 166px;
+        margin: 21px auto 0;
       }
 
     .advantage__properties {
@@ -139,8 +141,7 @@
 }
 
 @media (min-width: $widthDesktopStarts) {
-  .advantage__summary {
-    padding-left: 60px;
-    padding-right: 60px;
+  .advantage__thing {
+    width: 260px;
   }
 }
