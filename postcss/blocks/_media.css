@@ -77,6 +77,8 @@
     }
       .media__footer {
         flex-grow: 1;
+        margin-right: 20px;
+        max-width: calc( 100% - 66px - 20px ); /* 66px is a width of like and 20px is a gap */
       }
         .media__title {
           white-space: nowrap;
@@ -91,6 +93,8 @@
         }
 
       .media__like {
+        box-sizing: border-box;
+        width: 66px;
         margin-top: 0;
       }
 }
