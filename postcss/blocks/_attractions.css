@@ -23,6 +23,7 @@
       flex-basis: 40%;
     }
 
+    /* in common case */
     .attractions__item:nth-child(1),
     .attractions__item:nth-child(2) {
       margin-top: 0;
@@ -34,6 +35,36 @@
 
     .attractions__item:nth-of-type(even) {
       margin-right: 10%;
+    }
+
+
+    /* unique case */
+    .attractions__item_id_devils-bridge.attractions__item_id_devils-bridge {
+      order: 1;
+      margin-left: 10%;
+      margin-right: 0;
+      margin-top: 0;
+    }
+
+    .attractions__item_id_slide-rock.attractions__item_id_slide-rock {
+      order: 3;
+      margin-left: 10%;
+      margin-right: 0;
+      margin-top: 32px;
+    }
+
+    .attractions__item_id_bell-rock.attractions__item_id_bell-rock {
+      order: 2;
+      margin-left: 0;
+      margin-right: 10%;
+      margin-top: 0;
+    }
+
+    .attractions__item_id_red-rocks.attractions__item_id_red-rocks {
+      order: 4;
+      margin-left: 0;
+      margin-right: 10%;
+      margin-top: 32px;
     }
 }
 
@@ -52,4 +83,21 @@
     .attractions__item:first-child {
       margin: 0 10px;
     }
+
+    .attractions__item_id_devils-bridge {
+      order: 1;
+    }
+
+    .attractions__item_id_slide-rock {
+      order: 3;
+    }
+
+    .attractions__item_id_bell-rock {
+      order: 2;
+    }
+
+    .attractions__item_id_red-rocks {
+      order: 4;
+    }
+
 }

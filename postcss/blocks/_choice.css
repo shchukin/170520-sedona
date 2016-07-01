@@ -36,10 +36,10 @@ $choice__iconHeight: 58px; /* same to inputs */
     .choice__widget:not(:checked) ~ & {
       position: absolute;
       left: 0;
-      top: 0;
+      top: 1px;
       display: block;
-      width: $choice__iconHeight;
-      height: $choice__iconHeight;
+      width: calc( $choice__iconHeight - 2px);
+      height: calc( $choice__iconHeight - 2px);
       background: #f2f2f2;
     }
 
