@@ -22,6 +22,7 @@
     .excellence__item {
       flex-grow: 1;
       max-width: 33.333%;
+      max-width: calc( 100% / 3 );
     }
 
     .excellence__item_detailed {
