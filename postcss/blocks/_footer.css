@@ -49,4 +49,8 @@
     .footer__credits {
       border-right: 132px solid #fff;
     }
+      .footer__developer {
+        position: relative;
+        right: -88px;
+      }
 }
